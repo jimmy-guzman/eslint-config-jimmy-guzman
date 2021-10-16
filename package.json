@@ -1,0 +1,49 @@
+{
+  "name": "eslint-config-jimmy-guzman",
+  "version": "0.0.0",
+  "description": "A shareable ESLint configuration that targets react, typescript, jest, javascript, and @testing-library",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmy-guzman/eslint-config-jimmy-guzman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues"
+  },
+  "homepage": "https://github.com/jimmy-guzman/eslint-config-jimmy-guzman#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest",
+    "prepare": "is-ci || husky install"
+  },
+  "prettier": "@comparto/prettier-config",
+  "lint-staged": {
+    "*.{md,json,yml,js}": [
+      "prettier -w"
+    ]
+  },
+  "devDependencies": {
+    "@comparto/prettier-config": "^1.2.0",
+    "commitlint": "^13.2.1",
+    "gitzy": "^2.0.1",
+    "husky": "^7.0.2",
+    "is-ci": "^3.0.0",
+    "jest": "^27.2.5",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1"
+  },
+  "engines": {
+    "node": ">= 12",
+    "pnpm": ">= 6.17.1",
+    "yarn": "please use pnpm",
+    "npm": "please use pnpm"
+  },
+  "volta": {
+    "node": "14.18.1"
+  }
+}
