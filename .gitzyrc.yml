@@ -1,0 +1,2 @@
+useCommitlintConfig: true
+questions: [type, subject, body, breaking, issues]

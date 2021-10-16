@@ -1,0 +1,18 @@
+{
+  "version": "0.2",
+  "words": [
+    "codecov",
+    "commitlint",
+    "commitlintrc",
+    "comparto",
+    "esbenp",
+    "gitzy",
+    "lcov",
+    "nvmrc",
+    "pnpm",
+    "shellcheck",
+    "streetsidesoftware",
+    "wagoid"
+  ],
+  "ignorePaths": ["pnpm-lock.yaml"]
+}
