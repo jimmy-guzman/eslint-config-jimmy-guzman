@@ -22,8 +22,10 @@ jobs:
           node-version: '14'
           cache: 'pnpm'
 
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm test -- --coverage
+      - name: install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: run tests
+        run: pnpm test -- --coverage
 
       - name: codecov
         uses: codecov/codecov-action@v2
