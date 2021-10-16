@@ -1,14 +1,22 @@
 {
   "name": "eslint-config-jimmy-guzman",
   "version": "0.0.0",
-  "description": "A shareable ESLint configuration that targets react, typescript, jest, javascript, and @testing-library",
-  "main": "index.js",
+  "description": "An opinionated ESLint configuration that targets typescript, javascript, and jest",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./typescript": "./dist/typescript.js",
+    "./jest": "./dist/jest.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jimmy-guzman/eslint-config-jimmy-guzman.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "jimmy-guzman @jimmy-guzman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues"
@@ -18,39 +26,82 @@
     "access": "public"
   },
   "scripts": {
+    "dev": "run-p build:watch ts-check:watch",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint --cache . --ext .js,.ts",
+    "lint:fix": "pnpm lint -- --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "ts-check": "tsc --noEmit",
+    "ts-check:watch": "tsc --noEmit --watch",
+    "build": "rm -rf dist && node ./scripts/build.js",
+    "build:watch": "node ./scripts/build.js --watch",
+    "build:test": "rm -rf test/dist && node scripts/build-test.js",
+    "find-new-rules": "pnpm build:test && run-p find-new-rules:*",
+    "find-new-rules:base": "eslint-find-rules --unused test/dist/base.js",
+    "find-new-rules:jest": "eslint-find-rules --no-core --unused test/dist/jest.js",
+    "find-new-rules:imports": "eslint-find-rules --no-core --unused test/dist/imports.js",
+    "find-new-rules:ts": "eslint-find-rules --no-core --unused test/dist/typescript.js",
+    "commit": "gitzy",
     "prepare": "is-ci || husky install"
+  },
+  "gitzy": {
+    "useCommitlintConfig": true
   },
   "prettier": "@comparto/prettier-config",
   "lint-staged": {
-    "*.{md,json,yml,js}": [
+    "*.{md,json,yml,js,ts}": [
       "prettier -w"
+    ],
+    "*.{js,ts}": [
+      "eslint"
     ]
   },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.3.1",
+    "@typescript-eslint/parser": "5.3.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-jest": "25.2.4"
+  },
   "devDependencies": {
-    "@comparto/prettier-config": "^1.2.0",
-    "@semantic-release/changelog": "^6.0.0",
-    "@semantic-release/commit-analyzer": "^9.0.1",
-    "@semantic-release/git": "^10.0.0",
-    "@semantic-release/github": "^8.0.1",
-    "@semantic-release/npm": "^8.0.0",
-    "@semantic-release/release-notes-generator": "^10.0.2",
-    "commitlint": "^13.2.1",
-    "gitzy": "^2.0.1",
-    "husky": "^7.0.2",
-    "is-ci": "^3.0.0",
-    "jest": "^27.2.5",
-    "lint-staged": "^11.2.3",
-    "prettier": "^2.4.1",
-    "semantic-release": "^18.0.0"
+    "@comparto/prettier-config": "1.2.0",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/commit-analyzer": "9.0.1",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "8.0.2",
+    "@semantic-release/npm": "8.0.3",
+    "@semantic-release/release-notes-generator": "10.0.2",
+    "@types/jest": "27.0.2",
+    "commitlint": "14.1.0",
+    "esbuild": "0.13.13",
+    "esbuild-jest": "0.5.0",
+    "eslint": "8.2.0",
+    "eslint-find-rules": "^4.0.0",
+    "gitzy": "2.1.0",
+    "husky": "7.0.4",
+    "is-ci": "3.0.1",
+    "jest": "27.3.1",
+    "lint-staged": "11.2.6",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.4.1",
+    "semantic-release": "18.0.0",
+    "typescript": "4.4.4"
+  },
+  "peerDependencies": {
+    "eslint": "^8.2.0",
+    "prettier": "^2.4.0",
+    "typescript": "^4.4.0"
   },
   "engines": {
-    "node": ">= 12",
-    "pnpm": ">= 6.17.1",
-    "yarn": "please use pnpm",
-    "npm": "please use pnpm"
+    "node": ">= 12"
   },
   "volta": {
-    "node": "14.18.1"
-  }
+    "node": "16.13.0"
+  },
+  "files": [
+    "dist"
+  ]
 }

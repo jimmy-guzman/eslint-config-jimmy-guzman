@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`style should export style rules config 1`] = `
+Object {
+  "extends": Array [
+    "prettier",
+  ],
+  "rules": Object {
+    "arrow-body-style": "off",
+    "camelcase": "off",
+    "capitalized-comments": "off",
+    "consistent-this": "off",
+    "func-name-matching": "error",
+    "func-names": Array [
+      "error",
+      "as-needed",
+    ],
+    "func-style": "off",
+    "id-denylist": "off",
+    "id-length": Array [
+      "error",
+      Object {
+        "min": 2,
+      },
+    ],
+    "id-match": Array [
+      "error",
+      "^\\\\$?(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*\\\\$?$",
+    ],
+    "init-declarations": "off",
+    "line-comment-position": "off",
+    "lines-around-comment": "off",
+    "lines-between-class-members": "error",
+    "max-depth": Array [
+      "error",
+      4,
+    ],
+    "max-lines": Array [
+      "error",
+      Object {
+        "max": 500,
+        "skipBlankLines": true,
+        "skipComments": true,
+      },
+    ],
+    "max-lines-per-function": Array [
+      "error",
+      Object {
+        "max": 50,
+        "skipBlankLines": true,
+        "skipComments": true,
+      },
+    ],
+    "max-nested-callbacks": Array [
+      "error",
+      7,
+    ],
+    "max-params": Array [
+      "error",
+      3,
+    ],
+    "max-statements": Array [
+      "error",
+      12,
+    ],
+    "max-statements-per-line": Array [
+      "error",
+      Object {
+        "max": 1,
+      },
+    ],
+    "multiline-comment-style": "off",
+    "new-cap": "error",
+    "no-array-constructor": "error",
+    "no-bitwise": "off",
+    "no-continue": "error",
+    "no-duplicate-imports": "error",
+    "no-inline-comments": "off",
+    "no-lonely-if": "error",
+    "no-multi-assign": "error",
+    "no-negated-condition": "error",
+    "no-nested-ternary": "error",
+    "no-new-object": "error",
+    "no-plusplus": "off",
+    "no-restricted-exports": "off",
+    "no-restricted-imports": "off",
+    "no-restricted-syntax": "off",
+    "no-ternary": "off",
+    "no-underscore-dangle": "off",
+    "no-unneeded-ternary": "error",
+    "object-shorthand": "error",
+    "one-var": "off",
+    "operator-assignment": "off",
+    "padding-line-between-statements": Array [
+      "error",
+      Object {
+        "blankLine": "always",
+        "next": "*",
+        "prev": Array [
+          "const",
+          "let",
+          "var",
+        ],
+      },
+      Object {
+        "blankLine": "any",
+        "next": Array [
+          "const",
+          "let",
+          "var",
+        ],
+        "prev": Array [
+          "const",
+          "let",
+          "var",
+        ],
+      },
+    ],
+    "prefer-arrow-callback": "error",
+    "prefer-destructuring": Array [
+      "error",
+      Object {
+        "AssignmentExpression": Object {
+          "array": true,
+          "object": true,
+        },
+        "VariableDeclarator": Object {
+          "array": true,
+          "object": true,
+        },
+      },
+      Object {
+        "enforceForRenamedProperties": true,
+      },
+    ],
+    "prefer-exponentiation-operator": "warn",
+    "prefer-numeric-literals": "off",
+    "prefer-object-spread": "error",
+    "prefer-spread": "error",
+    "sort-imports": "off",
+    "sort-keys": Array [
+      "error",
+      "asc",
+      Object {
+        "caseSensitive": true,
+        "minKeys": 5,
+        "natural": false,
+      },
+    ],
+    "sort-vars": "off",
+    "space-before-blocks": "error",
+    "spaced-comment": "off",
+  },
+}
+`;
