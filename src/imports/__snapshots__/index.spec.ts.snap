@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`imports should export imports rules config 1`] = `
+Object {
+  "plugins": Array [
+    "import",
+  ],
+  "rules": Object {
+    "import/default": "error",
+    "import/dynamic-import-chunkname": "off",
+    "import/export": "error",
+    "import/exports-last": "error",
+    "import/extensions": Array [
+      "error",
+      "ignorePackages",
+      Object {
+        "js": "never",
+        "jsx": "never",
+        "mjs": "never",
+        "ts": "never",
+        "tsx": "never",
+      },
+    ],
+    "import/first": "error",
+    "import/group-exports": "off",
+    "import/max-dependencies": "off",
+    "import/named": "error",
+    "import/namespace": "error",
+    "import/newline-after-import": "error",
+    "import/no-absolute-path": Array [
+      "error",
+      Object {
+        "amd": false,
+        "commonjs": true,
+        "esmodule": true,
+      },
+    ],
+    "import/no-amd": "error",
+    "import/no-anonymous-default-export": "error",
+    "import/no-commonjs": "off",
+    "import/no-cycle": "warn",
+    "import/no-default-export": "off",
+    "import/no-deprecated": "warn",
+    "import/no-duplicates": "off",
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": "error",
+    "import/no-import-module-exports": "error",
+    "import/no-internal-modules": "off",
+    "import/no-mutable-exports": "error",
+    "import/no-named-as-default": "error",
+    "import/no-named-as-default-member": "error",
+    "import/no-named-default": "error",
+    "import/no-named-export": "off",
+    "import/no-namespace": "off",
+    "import/no-nodejs-modules": "off",
+    "import/no-relative-packages": "error",
+    "import/no-relative-parent-imports": "off",
+    "import/no-restricted-paths": "off",
+    "import/no-self-import": "error",
+    "import/no-unassigned-import": "off",
+    "import/no-unresolved": Array [
+      "error",
+      Object {
+        "caseSensitive": true,
+        "commonjs": true,
+      },
+    ],
+    "import/no-unused-modules": "off",
+    "import/no-useless-path-segments": "error",
+    "import/no-webpack-loader-syntax": "error",
+    "import/order": Array [
+      "error",
+      Object {
+        "alphabetize": Object {
+          "caseInsensitive": true,
+          "order": "asc",
+        },
+        "groups": Array [
+          "builtin",
+          "external",
+          "type",
+          "internal",
+          Array [
+            "parent",
+            "sibling",
+            "index",
+          ],
+        ],
+        "newlines-between": "always",
+      },
+    ],
+    "import/prefer-default-export": "off",
+    "import/unambiguous": "off",
+  },
+  "settings": Object {
+    "import/extensions": Array [
+      ".js",
+      ".mjs",
+      ".jsx",
+      ".ts",
+      ".tsx",
+    ],
+    "import/external-module-folders": Array [
+      "node_modules",
+      "node_modules/@types",
+    ],
+    "import/ignore": Array [
+      "node_modules",
+    ],
+    "import/resolver": Object {
+      "node": Object {
+        "extensions": Array [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".json",
+        ],
+      },
+    },
+  },
+}
+`;

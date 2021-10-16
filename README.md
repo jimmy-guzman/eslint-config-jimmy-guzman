@@ -7,6 +7,61 @@
 
 # eslint-config-jimmy-guzman
 
+> An opinionated ESLint configuration that targets typescript, javascript, and jest
+
+# Table of Contents
+
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Why](#why)
+- [Contributing](./CONTRIBUTING.md)
+
+# Usage
+
+> The current version of `eslint-config-jimmy-guzman` is fully supported on [LTS versions of node][node-lts-versions], and requires at least node v12.
+
+## Installation:
+
+**This requires the peer dependencies:** `eslint@^8.2.0`, `typescript@^4.4.0`, and `prettier@^2.4.0`.
+
+_To easily install everything you can leverage [`install-peerdeps`][install-peerdeps], i.e_
+
+| for             | how                                                                 |
+| --------------- | ------------------------------------------------------------------- |
+| yarn/npm        | `npx install-peerdeps --dev eslint-config-jimmy-guzman`             |
+| yarn workspaces | `npx install-peerdeps eslint-config-jimmy-guzman --dev -yarn -x -W` |
+| pnpm            | `pnpm dlx install-peerdeps eslint-config-jimmy-guzman --dev -pnpm`  |
+
+## Configuration
+
+Add `extends: 'jimmy-guzman'` to your `.eslintrc` to get all the rules that enforce code style, enforce best practices and prevent errors.
+
+This package also includes rules for `jest` and `typescript` that can be used such as:
+
+| rules      | configuration                                          | notes               |
+| ---------- | ------------------------------------------------------ | ------------------- |
+| base       | `extends: 'jimmy-guzman'`                              |                     |
+| jest       | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`       |                     |
+| typescript | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']` | [here](#typescript) |
+
+### Typescript
+
+`jimmy-guzman/typescript` ruleset requires type information that needs further configuration:
+
+```yml
+# .eslintrc.yml
+parserOptions:
+  project: ['./tsconfig.json']
+```
+
+You can read more about linting with type information [here][typed-linting]
+
+## Why
+
+I wanted a one-stop shop for the ESLint rules across my projects to help keep up with ESLint upgrades across different plugins and to have consistency. Feel free to use this if it fits your needs. ❤️
+
+<!-- badges -->
+
 [actions-badge]: https://img.shields.io/github/workflow/status/jimmy-guzman/eslint-config-jimmy-guzman/release?label=actions&logo=github-actions&style=flat-square
 [version-badge]: https://img.shields.io/npm/v/eslint-config-jimmy-guzman.svg?logo=npm&style=flat-square
 [package]: https://www.npmjs.com/package/eslint-config-jimmy-guzman
@@ -20,3 +75,9 @@
 [license-badge]: https://img.shields.io/npm/l/eslint-config-jimmy-guzman.svg?style=flat-square
 [coverage-badge]: https://img.shields.io/codecov/c/github/jimmy-guzman/eslint-config-jimmy-guzman.svg?style=flat-square&logo=codecov
 [coverage]: https://codecov.io/github/jimmy-guzman/eslint-config-jimmy-guzman
+
+<!-- misc -->
+
+[install-peerdeps]: https://www.npmjs.com/package/install-peerdeps
+[typed-linting]: https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md
+[node-lts-versions]: https://nodejs.org/en/about/releases/#releases

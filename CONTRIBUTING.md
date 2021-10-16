@@ -41,3 +41,21 @@ nvm use && pnpm install
 ```
 
 ## Scripts
+
+Run build and typechecking in watch mode
+
+```bash
+yarn dev
+```
+
+Run tests in watch mode
+
+```bash
+yarn test:watch
+```
+
+Run commit cli
+
+```bash
+yarn commit
+```
