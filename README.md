@@ -7,7 +7,7 @@
 
 # eslint-config-jimmy-guzman
 
-[actions-badge]: https://img.shields.io/github/workflow/status/jimmy-guzman/eslint-config-jimmy-guzman/cicd?label=actions&logo=github-actions&style=flat-square
+[actions-badge]: https://img.shields.io/github/workflow/status/jimmy-guzman/eslint-config-jimmy-guzman/release?label=actions&logo=github-actions&style=flat-square
 [version-badge]: https://img.shields.io/npm/v/eslint-config-jimmy-guzman.svg?logo=npm&style=flat-square
 [package]: https://www.npmjs.com/package/eslint-config-jimmy-guzman
 [downloads-badge]: https://img.shields.io/npm/dm/eslint-config-jimmy-guzman.svg?logo=npm&style=flat-square
