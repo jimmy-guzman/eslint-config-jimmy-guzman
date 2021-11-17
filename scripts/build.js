@@ -11,6 +11,7 @@ const entryPoints = [
   `${ROOT_DIR}/jest`,
   `${ROOT_DIR}/style`,
   `${ROOT_DIR}/typescript`,
+  `${ROOT_DIR}/react`,
 ]
 
 esbuild({ entryPoints })

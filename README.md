@@ -7,7 +7,7 @@
 
 # eslint-config-jimmy-guzman
 
-> An opinionated ESLint configuration that targets typescript, javascript, and jest
+> An opinionated ESLint configuration that targets typescript, javascript, react and jest
 
 # Table of Contents
 
@@ -43,6 +43,17 @@ This package also includes rules for `jest` and `typescript` that can be used su
 | base       | `extends: 'jimmy-guzman'`                              |                     |
 | jest       | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`       |                     |
 | typescript | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']` | [here](#typescript) |
+| react      | `extends: ['jimmy-guzman', 'jimmy-guzman/react']`      |                     |
+
+### Monorepos
+
+The following rules don't support some monorepo setups so you might need to turned them off:
+
+```yml
+# .eslintrc.yml
+rules:
+  import/no-extraneous-dependencies: off
+```
 
 ### Typescript
 

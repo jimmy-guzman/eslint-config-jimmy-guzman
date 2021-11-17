@@ -2,6 +2,16 @@
 
 exports[`imports should export imports rules config 1`] = `
 Object {
+  "overrides": Array [
+    Object {
+      "files": Array [
+        "**/?(*.)+(stories).[jt]s?(x)",
+      ],
+      "rules": Object {
+        "import/exports-last": "off",
+      },
+    },
+  ],
   "plugins": Array [
     "import",
   ],
