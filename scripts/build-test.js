@@ -7,6 +7,7 @@ const entryPoints = [
   `${ROOT_DIR}/jest.ts`,
   `${ROOT_DIR}/imports.ts`,
   `${ROOT_DIR}/typescript.ts`,
+  `${ROOT_DIR}/react.ts`,
 ]
 
 esbuild({ entryPoints, outdir: 'test/dist' })

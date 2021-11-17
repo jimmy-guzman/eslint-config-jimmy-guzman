@@ -14,4 +14,8 @@ rules:
   scope-empty: [2, never]
   scope-case: [2, always, lower-case]
   scope-enum:
-    [2, always, ['*', deps, base, typescript, jest, 'imports', 'style']]
+    [
+      2,
+      always,
+      ['*', deps, base, typescript, jest, 'imports', 'style', 'react'],
+    ]

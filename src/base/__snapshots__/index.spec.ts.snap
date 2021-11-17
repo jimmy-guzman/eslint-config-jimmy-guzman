@@ -12,6 +12,7 @@ Object {
       "jsx": true,
     },
     "ecmaVersion": 12,
+    "jsxPragma": null,
     "sourceType": "module",
   },
 }

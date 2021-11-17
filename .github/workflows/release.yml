@@ -15,7 +15,7 @@ jobs:
       - name: setup pnpm
         uses: pnpm/action-setup@3c2fe8c59284aae169107529dce6c78999f48956
         with:
-          version: 6.21.0
+          version: 6.21.1
       - name: setup cache
         uses: actions/setup-node@v2
         with:

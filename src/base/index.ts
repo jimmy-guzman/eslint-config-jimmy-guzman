@@ -8,6 +8,7 @@ export = {
     ecmaFeatures: {
       jsx: true,
     },
+    jsxPragma: null,
     ecmaVersion: 12,
     sourceType: 'module',
   },

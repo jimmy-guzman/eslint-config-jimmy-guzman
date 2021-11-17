@@ -6,6 +6,14 @@ import { rules } from './rules'
 export = {
   plugins: ['import'],
   rules,
+  overrides: [
+    {
+      files: ['**/?(*.)+(stories).[jt]s?(x)'],
+      rules: {
+        'import/exports-last': 'off',
+      },
+    },
+  ],
   settings: {
     'import/extensions': ['.js', '.mjs', '.jsx', '.ts', '.tsx'],
     'import/resolver': {
