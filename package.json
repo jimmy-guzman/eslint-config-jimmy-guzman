@@ -76,7 +76,7 @@
     "@semantic-release/release-notes-generator": "10.0.2",
     "@types/jest": "27.0.2",
     "commitlint": "14.1.0",
-    "esbuild": "0.13.13",
+    "esbuild": "0.13.14",
     "esbuild-jest": "0.5.0",
     "eslint": "8.2.0",
     "eslint-find-rules": "4.0.0",
