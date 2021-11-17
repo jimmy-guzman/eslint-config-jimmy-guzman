@@ -16,7 +16,7 @@ specifiers:
   esbuild-jest: 0.5.0
   eslint: 8.2.0
   eslint-config-prettier: 8.3.0
-  eslint-find-rules: ^4.0.0
+  eslint-find-rules: 4.0.0
   eslint-plugin-import: 2.25.3
   eslint-plugin-jest: 25.2.4
   gitzy: 2.1.0
