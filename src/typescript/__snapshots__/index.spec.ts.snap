@@ -272,6 +272,7 @@ Object {
         "no-obj-calls": "off",
         "no-redeclare": "off",
         "no-setter-return": "off",
+        "no-shadow": "off",
         "no-this-before-super": "off",
         "no-undef": "off",
         "no-unreachable": "off",
