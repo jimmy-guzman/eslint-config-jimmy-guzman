@@ -104,5 +104,8 @@ dist
 .tern-port
 
 # generated
-
 docs
+
+# yalc
+.yalc
+yalc.lock
