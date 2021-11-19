@@ -43,7 +43,7 @@ This package also includes rules for `jest` and `typescript` that can be used su
 | base       | `extends: 'jimmy-guzman'`                              |                     |
 | jest       | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`       |                     |
 | typescript | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']` | [here](#typescript) |
-| react      | `extends: ['jimmy-guzman', 'jimmy-guzman/react']`      |                     |
+| react      | `extends: ['jimmy-guzman', 'jimmy-guzman/react']`      | [here](#react)      |
 
 ### Monorepos
 
@@ -66,6 +66,20 @@ parserOptions:
 ```
 
 You can read more about linting with type information [here][typed-linting]
+
+### React
+
+`jimmy-guzman/react` favors [React 17's new jsx transform][react-17-new-jsx-transform] so a couple of rules are turned off by default. If you are not using the new jsx transform, it's recommended to add this configuration:
+
+```yml
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+    pragma: React
+rules:
+  react/react-in-jsx-scope: error
+  react/jsx-uses-react: error
+```
 
 ## Why
 
@@ -92,3 +106,4 @@ I wanted a one-stop shop for the ESLint rules across my projects to help keep up
 [install-peerdeps]: https://www.npmjs.com/package/install-peerdeps
 [typed-linting]: https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md
 [node-lts-versions]: https://nodejs.org/en/about/releases/#releases
+[react-17-new-jsx-transform]: https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
