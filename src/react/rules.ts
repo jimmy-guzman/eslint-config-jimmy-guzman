@@ -82,6 +82,11 @@ export const rules: EslintRules = {
   'react/jsx-sort-default-props': 'off',
   'react/jsx-sort-props': 'off',
   'react/jsx-tag-spacing': 'off',
+  /**
+   * [react/jsx-uses-react](https://github.com/yannickcr/eslint-plugin-react/blob/v7.27.0/docs/rules/jsx-uses-react.md)
+   * - TYPE: `🚨 error`
+   * - RATIONALE: React 17's new jsx transform is favored so this rule is not needed
+   */
   'react/jsx-uses-react': 'off',
   'react/jsx-uses-vars': 'warn',
   'react/jsx-wrap-multilines': 'off',
@@ -151,6 +156,11 @@ export const rules: EslintRules = {
   'react/prefer-read-only-props': 'off',
   'react/prefer-stateless-function': 'off',
   'react/prop-types': 'error',
+  /**
+   * [react/react-in-jsx-scope](https://github.com/yannickcr/eslint-plugin-react/blob/v7.27.0/docs/rules/react-in-jsx-scope.md)
+   * - TYPE: `🚨 error`
+   * - RATIONALE: React 17's new jsx transform is favored so this rule is not needed
+   */
   'react/react-in-jsx-scope': 'off',
   'react/require-default-props': 'off',
   'react/require-optimization': 'off',
