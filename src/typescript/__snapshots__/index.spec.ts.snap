@@ -34,18 +34,9 @@ Object {
           "error",
         ],
         "@typescript-eslint/dot-notation": "error",
-        "@typescript-eslint/explicit-function-return-type": Array [
-          "error",
-          Object {
-            "allowConciseArrowFunctionExpressionsStartingWithVoid": false,
-            "allowDirectConstAssertionInArrowFunctions": true,
-            "allowExpressions": false,
-            "allowHigherOrderFunctions": true,
-            "allowTypedFunctionExpressions": true,
-          },
-        ],
+        "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-member-accessibility": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "warn",
+        "@typescript-eslint/explicit-module-boundary-types": "error",
         "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/lines-between-class-members": "off",
         "@typescript-eslint/member-ordering": Array [
