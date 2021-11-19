@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.2.0...v1.2.1) (2021-11-19)
+
+
+### Bug Fixes
+
+* 🐛 match package license w/ LICENSE (MIT) ([41fddb0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/41fddb0af70211dcfef1cb73cf3807e286bac1f4)), closes [#13](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/13)
+
 # [1.2.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.1.0...v1.2.0) (2021-11-19)
 
 
