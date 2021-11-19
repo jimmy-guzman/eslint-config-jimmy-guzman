@@ -156,10 +156,6 @@ Object {
           Object {
             "format": null,
             "selector": "property",
-            "types": Array [
-              "boolean",
-              "string",
-            ],
           },
           Object {
             "format": Array [

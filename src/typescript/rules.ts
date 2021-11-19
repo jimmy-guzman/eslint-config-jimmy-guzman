@@ -23,12 +23,6 @@ export const rules = {
    * - RATIONALE: N/A
    */
   '@typescript-eslint/consistent-type-exports': 'off',
-  /**
-   * [@typescript-eslint/naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.1/packages/eslint-plugin/docs/rules/naming-convention.md)
-   * - TYPE: `🎨 stylistic`
-   * - RATIONALE: Enforcing naming conventions helps keep the codebase consistent, and reduces overhead when thinking about how to name a variable.
-   */
-
   '@typescript-eslint/consistent-type-imports': 'off', // fixable, revisit
   '@typescript-eslint/default-param-last': ['error'],
   '@typescript-eslint/dot-notation': 'error', // fixable,
@@ -56,6 +50,11 @@ export const rules = {
     },
   ],
   '@typescript-eslint/method-signature-style': ['error', 'property'], // fixable
+  /**
+   * [@typescript-eslint/naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.1/packages/eslint-plugin/docs/rules/naming-convention.md)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: Enforcing naming conventions helps keep the codebase consistent, and reduces overhead when thinking about how to name a variable.
+   */
   '@typescript-eslint/naming-convention': ['error', ...namingConventions],
   '@typescript-eslint/no-array-constructor': 'error',
   '@typescript-eslint/no-base-to-string': 'warn',
