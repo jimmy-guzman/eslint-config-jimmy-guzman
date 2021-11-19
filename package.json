@@ -18,7 +18,7 @@
     "eslintconfig"
   ],
   "author": "jimmy-guzman @jimmy-guzman",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues"
   },
