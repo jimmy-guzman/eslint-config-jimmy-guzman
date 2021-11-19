@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.1.0...v1.2.0) (2021-11-19)
+
+
+### Features
+
+* **react:** ✨ add react rules ([7128f04](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/7128f04d6bdc45dace04006ec5e8e65457841a0e)), closes [#4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/4)
+
 # [1.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.0.0...v1.1.0) (2021-11-19)
 
 
