@@ -21,6 +21,7 @@ export const eslintOverrides = {
   'no-obj-calls': 'off', // ts(2349)
   'no-redeclare': 'off', // ts(2451)
   'no-setter-return': 'off', // ts(2408)
+  'no-shadow': 'off', // @typescript-eslint/no-shadow
   'no-this-before-super': 'off', // ts(2376)
   'no-undef': 'off', // ts(2304)
   'no-unreachable': 'off', // ts(7027)
