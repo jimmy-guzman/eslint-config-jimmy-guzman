@@ -50,7 +50,6 @@ export const namingConventions = [
   },
   {
     selector: 'property',
-    types: ['boolean', 'string'],
     format: null,
   },
   {
