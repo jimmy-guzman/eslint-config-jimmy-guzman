@@ -168,7 +168,13 @@ Object {
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "warn",
         "@typescript-eslint/no-confusing-non-null-assertion": "off",
-        "@typescript-eslint/no-confusing-void-expression": "error",
+        "@typescript-eslint/no-confusing-void-expression": Array [
+          "error",
+          Object {
+            "ignoreArrowShorthand": true,
+            "ignoreVoidOperator": false,
+          },
+        ],
         "@typescript-eslint/no-dupe-class-members": "off",
         "@typescript-eslint/no-duplicate-imports": "error",
         "@typescript-eslint/no-dynamic-delete": "error",

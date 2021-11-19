@@ -59,7 +59,16 @@ export const rules = {
   '@typescript-eslint/no-array-constructor': 'error',
   '@typescript-eslint/no-base-to-string': 'warn',
   '@typescript-eslint/no-confusing-non-null-assertion': 'off', //fixable
-  '@typescript-eslint/no-confusing-void-expression': 'error', // fixable
+  /**
+   * [@typescript-eslint/no-confusing-void-expression](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.1/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md)
+   * - TYPE: `♻️ best-practice`
+   * - RATIONALE: Returning the results of an expression whose type is void can be misleading. `ignoreArrowShorthand` is enabled since it collides with `prettier`
+   * - FIXABLE: true
+   */
+  '@typescript-eslint/no-confusing-void-expression': [
+    'error',
+    { ignoreArrowShorthand: true, ignoreVoidOperator: false },
+  ],
   '@typescript-eslint/no-dupe-class-members': 'off',
   '@typescript-eslint/no-duplicate-imports': 'error',
   '@typescript-eslint/no-dynamic-delete': 'error', // fixable
