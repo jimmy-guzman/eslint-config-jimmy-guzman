@@ -26,18 +26,19 @@ export const rules = {
   '@typescript-eslint/consistent-type-imports': 'off', // fixable, revisit
   '@typescript-eslint/default-param-last': ['error'],
   '@typescript-eslint/dot-notation': 'error', // fixable,
-  '@typescript-eslint/explicit-function-return-type': [
-    'error',
-    {
-      allowConciseArrowFunctionExpressionsStartingWithVoid: false,
-      allowDirectConstAssertionInArrowFunctions: true,
-      allowExpressions: false,
-      allowHigherOrderFunctions: true,
-      allowTypedFunctionExpressions: true,
-    },
-  ],
+  /**
+   * [@typescript-eslint/explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
+   * - TYPE: `♻️ best-practice`
+   * - RATIONALE: Explicit types for function return values makes it clear to any calling code what type is returned but this can be annoying and by having `explicit-module-boundary-types` it should suffice
+   */
+  '@typescript-eslint/explicit-function-return-type': 'off',
   '@typescript-eslint/explicit-member-accessibility': 'off', // fixable, revisit
-  '@typescript-eslint/explicit-module-boundary-types': 'warn',
+  /**
+   * [@typescript-eslint/explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.1/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md)
+   * - TYPE: `♻️ best-practice`
+   * - RATIONALE: Explicit types for function return values and arguments makes it clear to any calling code what is the module boundary's input and output
+   */
+  '@typescript-eslint/explicit-module-boundary-types': 'error',
   '@typescript-eslint/init-declarations': 'off',
   '@typescript-eslint/lines-between-class-members': 'off', // fixable, revisit,
   '@typescript-eslint/member-ordering': [
