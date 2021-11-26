@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.2.1...v1.2.2) (2021-11-26)
+
+
+### Bug Fixes
+
+* **deps:** 🐛 do not pin `dependencies` ([4778fea](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/4778fea053687f122ce94de7de65dc7a94b0700b)), closes [#34](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/34)
+
 ## [1.2.1](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.2.0...v1.2.1) (2021-11-19)
 
 
