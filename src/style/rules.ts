@@ -321,6 +321,12 @@ export const rules = {
    * @todo: revisit
    */
   'prefer-numeric-literals': 'off',
+  /**
+   * [prefer-object-has-own](https://eslint.org/docs/rules/prefer-object-has-own)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: shorthand to Object.prototype.hasOwnProperty.call() which is enforced by `no-prototype-builtins`
+   */
+  'prefer-object-has-own': 'error',
   'prefer-object-spread': 'error',
   /**
    * [prefer-spread](https://eslint.org/docs/rules/prefer-spread)
