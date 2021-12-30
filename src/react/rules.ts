@@ -2,7 +2,7 @@ import { EslintRules } from '../models'
 import { jsxA11yRules } from './jsx-a11y'
 import { eslintOverrides } from './overrides'
 
-const hooksRules: EslintRules = {
+const hooksRules = <const>{
   'react-hooks/exhaustive-deps': 'error',
   'react-hooks/rules-of-hooks': 'error',
 }

@@ -1,6 +1,7 @@
+import { EslintRules } from '../models'
 import { deprecatedEslintRules } from './deprecated'
 
-export const rules = {
+export const rules: EslintRules = {
   ...deprecatedEslintRules,
   /**
    * [arrow-body-style](https://eslint.org/docs/rules/arrow-body-style)
