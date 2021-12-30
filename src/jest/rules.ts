@@ -1,11 +1,13 @@
-const overrides = {
+import { EslintRules } from '../models'
+
+const overrides = <const>{
   'max-classes-per-file': 'off',
   'max-lines-per-function': 'off',
   'max-statements': 'off',
   'react/display-name': 'off',
 }
 
-export const rules = {
+export const rules: EslintRules = {
   'jest/consistent-test-it': ['error', { fn: 'test', withinDescribe: 'it' }],
   'jest/expect-expect': 'warn',
   /**

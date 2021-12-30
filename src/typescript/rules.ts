@@ -1,6 +1,7 @@
+import { EslintRules } from '../models'
 import { namingConventions } from './naming-conventions'
 
-export const rules = {
+export const rules: EslintRules = {
   '@typescript-eslint/adjacent-overload-signatures': 'error',
   '@typescript-eslint/array-type': 'off', // fixable, revisit
   /**
@@ -24,7 +25,7 @@ export const rules = {
    */
   '@typescript-eslint/consistent-type-exports': 'off',
   '@typescript-eslint/consistent-type-imports': 'off', // fixable, revisit
-  '@typescript-eslint/default-param-last': ['error'],
+  '@typescript-eslint/default-param-last': 'error',
   '@typescript-eslint/dot-notation': 'error', // fixable,
   /**
    * [@typescript-eslint/explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.3.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)

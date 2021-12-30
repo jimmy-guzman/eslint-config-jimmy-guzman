@@ -1,8 +1,10 @@
-export const importDuplicates = {
+import { EslintRules } from '../models'
+
+export const importDuplicates: EslintRules = {
   'import/no-duplicates': 'off',
 }
 
-export const eslintOverrides = {
+export const eslintOverrides: EslintRules = {
   'constructor-super': 'off', // ts(2335) & ts(2377)
   'getter-return': 'off', // ts(2378)
   'no-array-constructor': 'off',

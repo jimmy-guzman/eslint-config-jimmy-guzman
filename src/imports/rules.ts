@@ -1,4 +1,6 @@
-export const rules = {
+import { EslintRules } from '../models'
+
+export const rules: EslintRules = {
   /**
    * [import/default](https://github.com/import-js/eslint-plugin-import/blob/v2.25.2/docs/rules/default.md)
    * - TYPE: `🚨 error`
