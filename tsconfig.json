@@ -17,7 +17,7 @@
     "module": "commonjs",
     "outDir": "dist",
     "rootDir": "src",
-    "target": "es2021"
+    "target": "esnext"
   },
   "include": ["src/**/*"],
   "exclude": ["dist/"]

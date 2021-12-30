@@ -55,9 +55,9 @@ export const rules = {
   'no-octal': 'error',
   'no-promise-executor-return': 'off',
   /**
-   * []()
+   * [no-prototype-builtins](https://eslint.org/docs/rules/no-prototype-builtins)
    * - TYPE: `🚨 error`
-   * - RATIONALE:
+   * - RATIONALE: avoid bugs that can come from `Object.prototype`
    */
   'no-prototype-builtins': 'error',
   'no-redeclare': 'error',
