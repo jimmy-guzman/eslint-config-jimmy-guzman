@@ -70,7 +70,7 @@ export const rules: EslintRules = {
   /**
    * [jest/prefer-expect-resolves](https://github.com/jest-community/eslint-plugin-jest/blob/v25.2.4/docs/rules/prefer-expect-resolves.md)
    * - TYPE: `🎨 stylistic`
-   * - RATIONALE: more predictable behaviour and output from jest and consistency
+   * - RATIONALE: more predictable behavior and output from jest and consistency
    */
   'jest/prefer-expect-resolves': 'error',
   'jest/prefer-hooks-on-top': 'error',
