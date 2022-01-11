@@ -2,6 +2,7 @@ import { eslintOverrides, importDuplicates } from './overrides'
 import { rules } from './rules'
 
 export = {
+  extends: ['prettier'],
   overrides: [
     {
       files: ['**/*.ts?(x)'],
