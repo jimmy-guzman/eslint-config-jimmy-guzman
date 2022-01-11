@@ -2,6 +2,9 @@
 
 exports[`typescript should export typescript rules config 1`] = `
 Object {
+  "extends": Array [
+    "prettier",
+  ],
   "overrides": Array [
     Object {
       "files": Array [
