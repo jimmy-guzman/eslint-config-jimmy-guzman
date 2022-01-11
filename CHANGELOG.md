@@ -1,3 +1,25 @@
+# [2.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.2.2...v2.0.0) (2022-01-11)
+
+
+### Bug Fixes
+
+* **imports:** 🐛 bump `eslint-plugin-import` to `2.25.4` ([8861704](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/8861704c003ec14265f1ef1dd452b3728dde00fe))
+
+
+### Features
+
+* **base:** ✨ add `prefer-object-has-own` rule ([cececc4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/cececc475912ea99749fc2a23517453c938f39d4))
+* **jest:** ✨ bump `eslint-plugin-jest` to `25.3.4` ([352ab50](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/352ab50157acebd081c0bd45a7b1b2909f19beaf))
+* **react:** ✨ bump `eslint-plugin-react` to `7.28.0` ([05bab91](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/05bab917f056231bdd493d2672a093cf3fee7419))
+* **typescript:** ✨ stricter `no-throw-literal` rule ([b685a6b](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/b685a6b750796d2e041592248626d7b309643cb8))
+
+
+### BREAKING CHANGES
+
+* **typescript:** 💥 `typescript` version `^4.5.0` is required and `no-throw-literal`
+will throw on `any` and `unknown`
+* **base:** 💥 `eslint` version `^8.5.0` and ES2022 are now required
+
 ## [1.2.2](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.2.1...v1.2.2) (2021-11-26)
 
 
