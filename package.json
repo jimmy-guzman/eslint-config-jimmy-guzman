@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jimmy-guzman",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "An opinionated ESLint configuration that targets typescript, javascript, react and jest",
   "main": "dist/index.js",
   "exports": {

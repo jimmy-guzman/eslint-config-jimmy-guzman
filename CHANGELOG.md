@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.0.1...v2.0.2) (2022-01-12)
+
+
+### Bug Fixes
+
+* **base:** 🐛 turn off `prefer-object-has-own` due to typescript support ([0ff227e](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/0ff227eecdbdb9e57f3ec9d7b0beda07d7427c95))
+
 ## [2.0.1](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.0.0...v2.0.1) (2022-01-12)
 
 
