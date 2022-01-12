@@ -16,7 +16,7 @@ specifiers:
   esbuild-jest: 0.5.0
   eslint: 8.6.0
   eslint-config-prettier: ^8.3.0
-  eslint-find-rules: 4.0.0
+  eslint-find-rules: 4.1.0
   eslint-plugin-import: ^2.25.4
   eslint-plugin-jest: ^25.3.4
   eslint-plugin-jsx-a11y: ^6.5.1
@@ -55,7 +55,7 @@ devDependencies:
   esbuild: 0.14.11
   esbuild-jest: 0.5.0_esbuild@0.14.11
   eslint: 8.6.0
-  eslint-find-rules: 4.0.0_eslint@8.6.0
+  eslint-find-rules: 4.1.0_eslint@8.6.0
   gitzy: 2.1.0
   husky: 7.0.4
   is-ci: 3.0.1
@@ -2724,8 +2724,8 @@ packages:
       eslint: 8.6.0
     dev: false
 
-  /eslint-find-rules/4.0.0_eslint@8.6.0:
-    resolution: {integrity: sha512-Nz89wr+rYtIkqqYcmNBbJRPYKSZmBBTYDlQ3qyvm/LVmruSpRPApVWEvdwhNSaxUf7vsNKdPDP0iqEaOFfNGTw==}
+  /eslint-find-rules/4.1.0_eslint@8.6.0:
+    resolution: {integrity: sha512-2nLJ0UrQRUGbOX8ksSxTgDNWGBW0RidIEIMlwNe1YR4RkjYksFDPYWf3WO9QFWM2NqkuHlTTeyOM94vaNwaFVw==}
     engines: {node: ^10.12.0 || >=12.0.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
