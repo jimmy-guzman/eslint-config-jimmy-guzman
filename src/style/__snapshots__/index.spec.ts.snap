@@ -135,7 +135,7 @@ Object {
     ],
     "prefer-exponentiation-operator": "warn",
     "prefer-numeric-literals": "off",
-    "prefer-object-has-own": "error",
+    "prefer-object-has-own": "off",
     "prefer-object-spread": "error",
     "prefer-spread": "error",
     "sort-imports": "off",

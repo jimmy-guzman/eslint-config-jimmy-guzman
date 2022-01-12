@@ -3,7 +3,10 @@ import { namingConventions } from './naming-conventions'
 
 export const rules: EslintRules = {
   '@typescript-eslint/adjacent-overload-signatures': 'error',
-  '@typescript-eslint/array-type': 'off', // fixable, revisit
+  /**
+   * - NOTES: fixable
+   */
+  '@typescript-eslint/array-type': 'off', // revisit
   /**
    * - TYPE: `🚨 error`
    * - RATIONALE: Prevents awaiting values that are not promises which is often an error
@@ -14,7 +17,10 @@ export const rules: EslintRules = {
   '@typescript-eslint/ban-ts-comment': 'error',
   '@typescript-eslint/ban-tslint-comment': 'error', // fixable
   '@typescript-eslint/ban-types': 'error',
-  '@typescript-eslint/class-literal-property-style': 'off', // fixable, revisit
+  /**
+   * - NOTES: fixable
+   */
+  '@typescript-eslint/class-literal-property-style': 'off', // revisit
   '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'], // fixable
   '@typescript-eslint/consistent-type-assertions': 'off', // revisit
   '@typescript-eslint/consistent-type-definitions': ['error', 'interface'], // fixable
@@ -24,16 +30,22 @@ export const rules: EslintRules = {
    * - RATIONALE: N/A
    */
   '@typescript-eslint/consistent-type-exports': 'off',
-  '@typescript-eslint/consistent-type-imports': 'off', // fixable, revisit
+  /**
+   * - NOTES: fixable
+   */
+  '@typescript-eslint/consistent-type-imports': 'off', // revisit
   '@typescript-eslint/default-param-last': 'error',
-  '@typescript-eslint/dot-notation': 'error', // fixable,
+  '@typescript-eslint/dot-notation': 'error', // fixable
   /**
    * [@typescript-eslint/explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
    * - TYPE: `♻️ best-practice`
    * - RATIONALE: Explicit types for function return values makes it clear to any calling code what type is returned but this can be annoying and by having `explicit-module-boundary-types` it should suffice
    */
   '@typescript-eslint/explicit-function-return-type': 'off',
-  '@typescript-eslint/explicit-member-accessibility': 'off', // fixable, revisit
+  /**
+   * - NOTES: fixable
+   */
+  '@typescript-eslint/explicit-member-accessibility': 'off', // revisit
   /**
    * [@typescript-eslint/explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md)
    * - TYPE: `♻️ best-practice`
@@ -41,7 +53,10 @@ export const rules: EslintRules = {
    */
   '@typescript-eslint/explicit-module-boundary-types': 'error',
   '@typescript-eslint/init-declarations': 'off',
-  '@typescript-eslint/lines-between-class-members': 'off', // fixable, revisit,
+  /**
+   * - NOTES: fixable
+   */
+  '@typescript-eslint/lines-between-class-members': 'off', // revisit,
   '@typescript-eslint/member-ordering': [
     'error',
     {
@@ -80,7 +95,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-extra-non-null-assertion': 'error',
   '@typescript-eslint/no-extra-semi': 'error',
   '@typescript-eslint/no-extraneous-class': 'error',
-  '@typescript-eslint/no-floating-promises': 'off', // revisits
+  '@typescript-eslint/no-floating-promises': 'off', // revisit
   '@typescript-eslint/no-for-in-array': 'error',
   '@typescript-eslint/no-implicit-any-catch': 'error', // fixable
   '@typescript-eslint/no-implied-eval': 'error',
@@ -181,9 +196,8 @@ export const rules: EslintRules = {
    * [@typescript-eslint/prefer-return-this-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.8.1/packages/eslint-plugin/docs/rules/prefer-return-this-type.md)
    * - TYPE: N/A
    * - RATIONALE: N/A
-   * @todo revisit
    */
-  '@typescript-eslint/prefer-return-this-type': 'off',
+  '@typescript-eslint/prefer-return-this-type': 'off', // revisit
   '@typescript-eslint/prefer-string-starts-ends-with': 'error', // fixable
   '@typescript-eslint/prefer-ts-expect-error': 'error', //fixable
   '@typescript-eslint/promise-function-async': 'off',

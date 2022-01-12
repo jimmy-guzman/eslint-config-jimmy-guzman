@@ -40,7 +40,7 @@ This package also includes rules for `jest` and `typescript` that can be used su
 
 | rules      | configuration                                          | notes               |
 | ---------- | ------------------------------------------------------ | ------------------- |
-| base       | `extends: 'jimmy-guzman'`                              | [here][#base]       |
+| base       | `extends: 'jimmy-guzman'`                              |                     |
 | jest       | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`       |                     |
 | typescript | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']` | [here](#typescript) |
 | react      | `extends: ['jimmy-guzman', 'jimmy-guzman/react']`      | [here](#react)      |
@@ -53,16 +53,6 @@ The following rules don't support some monorepo setups so you might need to turn
 # .eslintrc.yml
 rules:
   import/no-extraneous-dependencies: off
-```
-
-### Base
-
-This ruleset targets ES2020 so if it's not supported, turn these rules off:
-
-```yml
-# .eslintrc.yml
-rules:
-  prefer-object-has-own: off
 ```
 
 ### Typescript

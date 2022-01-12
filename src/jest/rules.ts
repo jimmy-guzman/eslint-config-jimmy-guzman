@@ -112,9 +112,8 @@ export const rules: EslintRules = {
    * [jest/unbound-method](https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/unbound-method.md)
    * - TYPE: N/A
    * - RATIONALE: this rule requires type information
-   * @todo revisit
    */
-  'jest/unbound-method': 'off',
+  'jest/unbound-method': 'off', // revisit
   /**
    * - TYPE: `🚨 error`
    * - RATIONALE: The callback in a describe block should be async, not contain any parameters, and not contain a return statement otherwise it can lead to unexpected errors

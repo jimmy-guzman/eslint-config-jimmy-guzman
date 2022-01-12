@@ -7,16 +7,14 @@ export const rules: EslintRules = {
    * [arrow-body-style](https://eslint.org/docs/rules/arrow-body-style)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: N/A
-   * @todo revisit
    */
-  'arrow-body-style': 'off',
+  'arrow-body-style': 'off', // revisit
   /**
    * [camelcase](https://eslint.org/docs/rules/camelcase)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: N/A
-   * @todo revisit
    */
-  'camelcase': 'off',
+  'camelcase': 'off', // revisit
   /**
    * [capitalized-comments](https://eslint.org/docs/rules/capitalized-comments)
    * - TYPE: `🎨 stylistic`
@@ -51,9 +49,8 @@ export const rules: EslintRules = {
    * [id-denylist](https://eslint.org/docs/rules/id-denylist
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: generic names can lead to hard-to-decipher code which this rule helps prevent so it warrants a revisit
-   * @todo revisit
    */
-  'id-denylist': 'off',
+  'id-denylist': 'off', // revisit
   /**
    * [id-length](https://eslint.org/docs/rules/id-length)
    * - TYPE: `🎨 stylistic`
@@ -214,16 +211,14 @@ export const rules: EslintRules = {
    * [no-restricted-exports](https://eslint.org/docs/rules/no-restricted-exports)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: This rule is project dependent
-   * @todo revisit
    */
-  'no-restricted-exports': 'off',
+  'no-restricted-exports': 'off', // revisit
   /**
    * [no-restricted-imports](https://eslint.org/docs/rules/no-restricted-imports)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: This rule is project dependent
-   * @todo revisit
    */
-  'no-restricted-imports': 'off',
+  'no-restricted-imports': 'off', // revisit
   /**
    * []()
    * - TYPE: `🎨 stylistic`
@@ -319,15 +314,15 @@ export const rules: EslintRules = {
    * [prefer-numeric-literals](https://eslint.org/docs/rules/prefer-numeric-literals)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: N/A
-   * @todo: revisit
    */
-  'prefer-numeric-literals': 'off',
+  'prefer-numeric-literals': 'off', // revisit
   /**
    * [prefer-object-has-own](https://eslint.org/docs/rules/prefer-object-has-own)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: shorthand to Object.prototype.hasOwnProperty.call() which is enforced by `no-prototype-builtins`
+   * - @see https://github.com/microsoft/TypeScript/issues/44253
    */
-  'prefer-object-has-own': 'error',
+  'prefer-object-has-own': 'off', // revisit
   'prefer-object-spread': 'error',
   /**
    * [prefer-spread](https://eslint.org/docs/rules/prefer-spread)
