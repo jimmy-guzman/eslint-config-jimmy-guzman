@@ -2,6 +2,9 @@
 
 exports[`react should export react rules config 1`] = `
 Object {
+  "extends": Array [
+    "prettier",
+  ],
   "plugins": Array [
     "react",
     "react-hooks",
@@ -158,31 +161,15 @@ Object {
       "error",
       "never",
     ],
-    "react/jsx-child-element-spacing": "off",
-    "react/jsx-closing-bracket-location": "off",
-    "react/jsx-closing-tag-location": "off",
     "react/jsx-curly-brace-presence": "off",
-    "react/jsx-curly-newline": "off",
-    "react/jsx-curly-spacing": "off",
-    "react/jsx-equals-spacing": "off",
     "react/jsx-filename-extension": "off",
-    "react/jsx-first-prop-new-line": "off",
     "react/jsx-fragments": Array [
       "error",
       "syntax",
     ],
     "react/jsx-handler-names": "off",
-    "react/jsx-indent": "off",
-    "react/jsx-indent-props": "off",
     "react/jsx-key": "warn",
     "react/jsx-max-depth": "off",
-    "react/jsx-max-props-per-line": "off",
-    "react/jsx-newline": Array [
-      "error",
-      Object {
-        "prevent": true,
-      },
-    ],
     "react/jsx-no-bind": "off",
     "react/jsx-no-comment-textnodes": "warn",
     "react/jsx-no-constructed-context-values": "error",
@@ -199,14 +186,11 @@ Object {
     "react/jsx-no-useless-fragment": "error",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-pascal-case": "error",
-    "react/jsx-props-no-multi-spaces": "off",
     "react/jsx-props-no-spreading": "off",
     "react/jsx-sort-default-props": "off",
     "react/jsx-sort-props": "off",
-    "react/jsx-tag-spacing": "off",
     "react/jsx-uses-react": "off",
     "react/jsx-uses-vars": "warn",
-    "react/jsx-wrap-multilines": "off",
     "react/no-access-state-in-setstate": "error",
     "react/no-adjacent-inline-elements": "warn",
     "react/no-array-index-key": "off",

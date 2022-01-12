@@ -39,28 +39,12 @@ export const rules: EslintRules = {
   ],
   'react/function-component-definition': 'off',
   'react/jsx-boolean-value': ['error', 'never'],
-  'react/jsx-child-element-spacing': 'off',
-  'react/jsx-closing-bracket-location': 'off',
-  'react/jsx-closing-tag-location': 'off',
   'react/jsx-curly-brace-presence': 'off',
-  'react/jsx-curly-newline': 'off',
-  'react/jsx-curly-spacing': 'off',
-  'react/jsx-equals-spacing': 'off',
   'react/jsx-filename-extension': 'off',
-  'react/jsx-first-prop-new-line': 'off',
   'react/jsx-fragments': ['error', 'syntax'],
   'react/jsx-handler-names': 'off',
-  'react/jsx-indent': 'off',
-  'react/jsx-indent-props': 'off',
   'react/jsx-key': 'warn',
   'react/jsx-max-depth': 'off',
-  'react/jsx-max-props-per-line': 'off',
-  /**
-   * [react/jsx-newline](https://github.com/yannickcr/eslint-plugin-react/blob/v7.27.0/docs/rules/jsx-newline.md)
-   * - TYPE: `🎨 stylistic`
-   * - RATIONALE: Simply preference for preventing new lines between JSX elements
-   */
-  'react/jsx-newline': ['error', { prevent: true }],
   'react/jsx-no-bind': 'off',
   'react/jsx-no-comment-textnodes': 'warn',
   /**
@@ -77,11 +61,9 @@ export const rules: EslintRules = {
   'react/jsx-no-useless-fragment': 'error',
   'react/jsx-one-expression-per-line': 'off',
   'react/jsx-pascal-case': 'error',
-  'react/jsx-props-no-multi-spaces': 'off',
   'react/jsx-props-no-spreading': 'off',
   'react/jsx-sort-default-props': 'off',
   'react/jsx-sort-props': 'off',
-  'react/jsx-tag-spacing': 'off',
   /**
    * [react/jsx-uses-react](https://github.com/yannickcr/eslint-plugin-react/blob/v7.27.0/docs/rules/jsx-uses-react.md)
    * - TYPE: `🚨 error`
@@ -89,7 +71,6 @@ export const rules: EslintRules = {
    */
   'react/jsx-uses-react': 'off',
   'react/jsx-uses-vars': 'warn',
-  'react/jsx-wrap-multilines': 'off',
   'react/no-access-state-in-setstate': 'error',
   'react/no-adjacent-inline-elements': 'warn',
   'react/no-array-index-key': 'off',
