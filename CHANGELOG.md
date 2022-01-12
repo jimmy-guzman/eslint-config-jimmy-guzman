@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.0.0...v2.0.1) (2022-01-12)
+
+
+### Bug Fixes
+
+* **react:** 🐛 always include `prettier` overrides ([8f965a4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/8f965a49facc5e9923ca78d576f317d75d5c5ed6))
+* **typescript:** 🐛 always include `prettier` overrrides ([09c3cdd](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/09c3cdd31c95de254ed769b8935477dd20a650ca))
+
 # [2.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.2.2...v2.0.0) (2022-01-11)
 
 
