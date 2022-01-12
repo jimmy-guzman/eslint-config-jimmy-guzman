@@ -151,9 +151,8 @@ export const rules: EslintRules = {
    * [import/no-internal-modules](https://github.com/import-js/eslint-plugin-import/blob/v2.25.2/docs/rules/no-internal-modules.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: barrel files helps keep imports/exports clean and this rule encourages this practices
-   * - NOTES: revisit
    */
-  'import/no-internal-modules': 'off',
+  'import/no-internal-modules': 'off', // revisit
   /**
    * [import/no-mutable-exports](https://github.com/import-js/eslint-plugin-import/blob/v2.25.2/docs/rules/no-mutable-exports.md)
    * - TYPE: `♻️ best-practices`

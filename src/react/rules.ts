@@ -19,9 +19,8 @@ export const rules: EslintRules = {
    * (react/button-has-type)[https://github.com/yannickcr/eslint-plugin-react/blob/v7.27.0/docs/rules/button-has-type.md]
    * - TYPE: `🚨 error`
    * - RATIONALE: turning off due to this issue https://github.com/yannickcr/eslint-plugin-react/issues/1846
-   * @todo revisit
    */
-  'react/button-has-type': 'off',
+  'react/button-has-type': 'off', // revisit
   'react/default-props-match-prop-types': 'error',
   'react/destructuring-assignment': 'off',
   'react/display-name': 'warn',
@@ -131,9 +130,8 @@ export const rules: EslintRules = {
    * [react/prefer-exact-props](https://github.com/yannickcr/eslint-plugin-react/blob/v7.27.0/docs/rules/prefer-exact-props.md)
    * - TYPE: `🚨 error`
    * - RATIONALE:
-   * @revisit
    */
-  'react/prefer-exact-props': 'off',
+  'react/prefer-exact-props': 'off', // revisit
   'react/prefer-read-only-props': 'off',
   'react/prefer-stateless-function': 'off',
   'react/prop-types': 'error',
