@@ -22,7 +22,7 @@ specifiers:
   eslint-plugin-jsx-a11y: ^6.5.1
   eslint-plugin-react: ^7.28.0
   eslint-plugin-react-hooks: ^4.3.0
-  gitzy: 2.1.0
+  gitzy: 3.0.0
   husky: 7.0.4
   is-ci: 3.0.1
   jest: 27.4.7
@@ -56,7 +56,7 @@ devDependencies:
   esbuild-jest: 0.5.0_esbuild@0.14.11
   eslint: 8.6.0
   eslint-find-rules: 4.1.0_eslint@8.6.0
-  gitzy: 2.1.0
+  gitzy: 3.0.0
   husky: 7.0.4
   is-ci: 3.0.1
   jest: 27.4.7
@@ -3320,9 +3320,9 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /gitzy/2.1.0:
-    resolution: {integrity: sha512-u5hdE1vtbxXm3GwBz1mP3e5Ly5XpIGuNxHrRuZuzHLtzDnvWxRKjxnyj+WCjoGjDbxL7X+DCRbfmw5kDyoGTQg==}
-    engines: {node: '>= 12'}
+  /gitzy/3.0.0:
+    resolution: {integrity: sha512-brQ1HGJrnUflqrBwwuRnyFiqdAsZKESJ3gAEwCcF+O11LofWx6E9mslKh84tIF+JK9xUIgA2IecZkjAyx9viYA==}
+    engines: {node: '>= 14'}
     hasBin: true
     dependencies:
       ansi-colors: 4.1.1
