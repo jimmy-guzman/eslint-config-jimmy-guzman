@@ -22,7 +22,7 @@ specifiers:
   eslint-plugin-jsx-a11y: ^6.5.1
   eslint-plugin-react: ^7.28.0
   eslint-plugin-react-hooks: ^4.3.0
-  gitzy: 3.0.0
+  gitzy: 3.1.0
   husky: 7.0.4
   is-ci: 3.0.1
   jest: 27.4.7
@@ -56,7 +56,7 @@ devDependencies:
   esbuild-jest: 0.5.0_esbuild@0.14.11
   eslint: 8.6.0
   eslint-find-rules: 4.1.0_eslint@8.6.0
-  gitzy: 3.0.0
+  gitzy: 3.1.0
   husky: 7.0.4
   is-ci: 3.0.1
   jest: 27.4.7
@@ -3320,15 +3320,16 @@ packages:
       through2: 4.0.2
     dev: true
 
-  /gitzy/3.0.0:
-    resolution: {integrity: sha512-brQ1HGJrnUflqrBwwuRnyFiqdAsZKESJ3gAEwCcF+O11LofWx6E9mslKh84tIF+JK9xUIgA2IecZkjAyx9viYA==}
+  /gitzy/3.1.0:
+    resolution: {integrity: sha512-TDkpuPkZj4guRwnOAzLjZ7KpH5ziRWaKkV4sx89DpNpRSSedGfdFMy2Fn4KugChy4sn1XUfmB8HLHRKA3FNLiQ==}
     engines: {node: '>= 14'}
     hasBin: true
     dependencies:
       ansi-colors: 4.1.1
       commander: 8.3.0
-      cosmiconfig: 7.0.1
       enquirer: 2.3.6
+      lilconfig: 2.0.4
+      yaml: 1.10.2
     dev: true
 
   /glob-parent/5.1.2:
@@ -4667,6 +4668,11 @@ packages:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
+    dev: true
+
+  /lilconfig/2.0.4:
+    resolution: {integrity: sha512-bfTIN7lEsiooCocSISTWXkiWJkRqtL9wYtYy+8EK3Y41qh3mpwPU0ycTOgjdY9ErwXCc8QyrQp82bdL0Xkm9yA==}
+    engines: {node: '>=10'}
     dev: true
 
   /lines-and-columns/1.1.6:
