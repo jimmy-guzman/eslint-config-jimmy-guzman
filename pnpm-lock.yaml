@@ -11,7 +11,7 @@ specifiers:
   '@types/jest': 27.4.0
   '@typescript-eslint/eslint-plugin': ^5.9.1
   '@typescript-eslint/parser': ^5.9.1
-  commitlint: 16.0.2
+  commitlint: 16.1.0
   esbuild: 0.14.14
   esbuild-jest: 0.5.0
   eslint: 8.7.0
@@ -51,7 +51,7 @@ devDependencies:
   '@semantic-release/npm': 9.0.0_semantic-release@19.0.2
   '@semantic-release/release-notes-generator': 10.0.3_semantic-release@19.0.2
   '@types/jest': 27.4.0
-  commitlint: 16.0.2
+  commitlint: 16.1.0
   esbuild: 0.14.14
   esbuild-jest: 0.5.0_esbuild@0.14.14
   eslint: 8.7.0
@@ -448,14 +448,14 @@ packages:
       minimist: 1.2.5
     dev: true
 
-  /@commitlint/cli/16.0.2:
-    resolution: {integrity: sha512-Jt7iaBjoLGC5Nq4dHPTvTYnqPGkElFPBtTXTvBpTgatZApczyjI2plE0oG4GYWPp1suHIS/VdVDOMpPZjGVusg==}
+  /@commitlint/cli/16.1.0:
+    resolution: {integrity: sha512-x5L1knvA3isRWBRVQx+Q6D45pA9139a2aZQYpxkljMG0dj4UHZkCnsYWpnGalxPxASI7nrI0KedKfS2YeQ55cQ==}
     engines: {node: '>=v12'}
     hasBin: true
     dependencies:
       '@commitlint/format': 16.0.0
       '@commitlint/lint': 16.0.0
-      '@commitlint/load': 16.0.0
+      '@commitlint/load': 16.1.0
       '@commitlint/read': 16.0.0
       '@commitlint/types': 16.0.0
       lodash: 4.17.21
@@ -468,8 +468,8 @@ packages:
       - '@types/node'
     dev: true
 
-  /@commitlint/config-validator/16.0.0:
-    resolution: {integrity: sha512-i80DGlo1FeC5jZpuoNV9NIjQN/m2dDV3jYGWg+1Wr+KldptkUHXj+6GY1Akll66lJ3D8s6aUGi3comPLHPtWHg==}
+  /@commitlint/config-validator/16.1.0:
+    resolution: {integrity: sha512-2cHeZPNTuf1JWbMqyA46MkExor5HMSgv8JrdmzEakUbJHUreh35/wN00FJf57qGs134exQW2thiSQ1IJUsVx2Q==}
     engines: {node: '>=v12'}
     dependencies:
       '@commitlint/types': 16.0.0
@@ -515,13 +515,13 @@ packages:
       '@commitlint/types': 16.0.0
     dev: true
 
-  /@commitlint/load/16.0.0:
-    resolution: {integrity: sha512-7WhrGCkP6K/XfjBBguLkkI2XUdiiIyMGlNsSoSqgRNiD352EiffhFEApMy1/XOU+viwBBm/On0n5p0NC7e9/4A==}
+  /@commitlint/load/16.1.0:
+    resolution: {integrity: sha512-MtlEhKjP8jAF85jjX4mw8DUUwCxKsCgAc865hhpnwxjrfBcmGP7Up2AFE/M3ZMGDmSl1X1TMybQk/zohj8Cqdg==}
     engines: {node: '>=v12'}
     dependencies:
-      '@commitlint/config-validator': 16.0.0
+      '@commitlint/config-validator': 16.1.0
       '@commitlint/execute-rule': 16.0.0
-      '@commitlint/resolve-extends': 16.0.0
+      '@commitlint/resolve-extends': 16.1.0
       '@commitlint/types': 16.0.0
       chalk: 4.1.2
       cosmiconfig: 7.0.1
@@ -559,11 +559,11 @@ packages:
       git-raw-commits: 2.0.10
     dev: true
 
-  /@commitlint/resolve-extends/16.0.0:
-    resolution: {integrity: sha512-Z/w9MAQUcxeawpCLtjmkVNXAXOmB2nhW+LYmHEZcx9O6UTauF/1+uuZ2/r0MtzTe1qw2JD+1QHVhEWYHVPlkdA==}
+  /@commitlint/resolve-extends/16.1.0:
+    resolution: {integrity: sha512-8182s6AFoUFX6+FT1PgQDt15nO2ogdR/EN8SYVAdhNXw1rLz8kT5saB/ICw567GuRAUgFTUMGCXy3ctMOXPEDg==}
     engines: {node: '>=v12'}
     dependencies:
-      '@commitlint/config-validator': 16.0.0
+      '@commitlint/config-validator': 16.1.0
       '@commitlint/types': 16.0.0
       import-fresh: 3.3.0
       lodash: 4.17.21
@@ -2129,12 +2129,12 @@ packages:
     engines: {node: '>= 12'}
     dev: true
 
-  /commitlint/16.0.2:
-    resolution: {integrity: sha512-2gs6RT5q7Z1ustssIXZ9pHXml47LkMvZhAmQcKtjEYzixkqKP8eH/ty3pUjlVcidGWRzw6K87U8PS9Nz1qKhuA==}
+  /commitlint/16.1.0:
+    resolution: {integrity: sha512-Rqm1dcsVf6Wkn0yBMHMFGcMdqHfaGra4pu314INydD9vMLRkgvLL9BRCUz+2NXN5JmOtKq3bA6+VYi2vKdc9MQ==}
     engines: {node: '>=v12'}
     hasBin: true
     dependencies:
-      '@commitlint/cli': 16.0.2
+      '@commitlint/cli': 16.1.0
       '@commitlint/types': 16.0.0
     transitivePeerDependencies:
       - '@swc/core'
