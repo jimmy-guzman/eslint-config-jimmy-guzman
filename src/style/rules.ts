@@ -210,13 +210,13 @@ export const rules: EslintRules = {
   /**
    * [no-restricted-exports](https://eslint.org/docs/rules/no-restricted-exports)
    * - TYPE: `🎨 stylistic`
-   * - RATIONALE: This rule is project dependent
+   * - RATIONALE: this rule is project specific
    */
   'no-restricted-exports': 'off', // revisit
   /**
    * [no-restricted-imports](https://eslint.org/docs/rules/no-restricted-imports)
    * - TYPE: `🎨 stylistic`
-   * - RATIONALE: This rule is project dependent
+   * - RATIONALE: this rule is project specific
    */
   'no-restricted-imports': 'off', // revisit
   /**
