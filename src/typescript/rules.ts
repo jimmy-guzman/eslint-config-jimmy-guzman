@@ -128,7 +128,7 @@ export const rules: EslintRules = {
   /**
    * [@typescript-eslint/no-restricted-imports]()
    * - TYPE: `🎨 stylistic`
-   * - RATIONALE: This rule is project dependent
+   * - RATIONALE: this rule is project specific
    */
   '@typescript-eslint/no-restricted-imports': 'off',
   '@typescript-eslint/no-shadow': 'error',

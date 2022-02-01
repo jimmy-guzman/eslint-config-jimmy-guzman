@@ -51,6 +51,7 @@
     "tabbable",
     "tabindex",
     "tablist",
+    "testid",
     "textbox",
     "textnodes",
     "transpiles",

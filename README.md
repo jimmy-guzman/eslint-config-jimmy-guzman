@@ -7,7 +7,7 @@
 
 # eslint-config-jimmy-guzman
 
-> An opinionated ESLint configuration that targets typescript, javascript, react and jest
+> An opinionated ESLint configuration that targets typescript, javascript, react and jest and testing-library
 
 # Table of Contents
 
@@ -36,14 +36,15 @@ _To easily install everything you can leverage [`install-peerdeps`][install-peer
 
 Add `extends: 'jimmy-guzman'` to your `.eslintrc` to get all the rules that enforce code style, enforce best practices and prevent errors.
 
-This package also includes rules for `jest` and `typescript` that can be used such as:
+This package also includes rules for `jest`, `typescript` and `testing-library` that can be used such as:
 
-| rules      | configuration                                          | notes               |
-| ---------- | ------------------------------------------------------ | ------------------- |
-| base       | `extends: 'jimmy-guzman'`                              |                     |
-| jest       | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`       |                     |
-| typescript | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']` | [here](#typescript) |
-| react      | `extends: ['jimmy-guzman', 'jimmy-guzman/react']`      | [here](#react)      |
+| rules           | configuration                                                                     | notes                    |
+| --------------- | --------------------------------------------------------------------------------- | ------------------------ |
+| base            | `extends: 'jimmy-guzman'`                                                         |                          |
+| jest            | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`                                  |                          |
+| typescript      | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']`                            | [here](#typescript)      |
+| react           | `extends: ['jimmy-guzman', 'jimmy-guzman/react']`                                 | [here](#react)           |
+| testing-library | `extends: ['jimmy-guzman', 'jimmy-guzman/react', 'jimmy-guzman/testing-library']` | [here](#testing-library) |
 
 ### Monorepos
 
@@ -80,6 +81,10 @@ rules:
   react/react-in-jsx-scope: error
   react/jsx-uses-react: error
 ```
+
+### Testing Library
+
+`jimmy-guzman/testing-library` makes an assumption that a suite of Testing Library packages are being used such as [@testing-library/react](https://github.com/testing-library/react-testing-library#readme), [@testing-library/jest-dom](https://github.com/testing-library/jest-dom#readme) and [@testing-library/user-event](https://github.com/testing-library/user-event#readme).
 
 ## Why
 

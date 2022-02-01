@@ -1,13 +1,14 @@
 {
   "name": "eslint-config-jimmy-guzman",
   "version": "2.0.2",
-  "description": "An opinionated ESLint configuration that targets typescript, javascript, react and jest",
+  "description": "An opinionated ESLint configuration that targets typescript, javascript, react, jest and testing-library",
   "main": "dist/index.js",
   "exports": {
     ".": "./dist/index.js",
     "./typescript": "./dist/typescript.js",
     "./jest": "./dist/jest.js",
-    "./react": "./dist/react.js"
+    "./react": "./dist/react.js",
+    "./testing-library": "./dist/testing-library.js"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,7 @@
     "find-new-rules:imports": "eslint-find-rules --no-core --unused ./dist/imports.js",
     "find-new-rules:ts": "eslint-find-rules --ext ts --no-core --unused dist/typescript.js",
     "find-new-rules:react": "eslint-find-rules --no-core --unused dist/react.js",
+    "find-new-rules:testing-library": "eslint-find-rules --ext .spec.ts --no-core --unused dist/testing-library.js",
     "commit": "gitzy",
     "prepare": "is-ci || husky install"
   },
@@ -66,9 +68,11 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-jest-dom": "^4.0.1",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-testing-library": "^5.1.0"
   },
   "devDependencies": {
     "@comparto/prettier-config": "1.2.0",
@@ -79,6 +83,7 @@
     "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/jest": "27.4.1",
+    "@types/node": "16.11.7",
     "commitlint": "16.2.1",
     "esbuild": "0.14.25",
     "esbuild-jest": "0.5.0",

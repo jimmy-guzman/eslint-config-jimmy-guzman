@@ -17,5 +17,15 @@ rules:
     [
       2,
       always,
-      ['*', deps, base, typescript, jest, 'imports', 'style', 'react'],
+      [
+        '*',
+        deps,
+        base,
+        typescript,
+        jest,
+        'imports',
+        'style',
+        'react',
+        'testing-library',
+      ],
     ]
