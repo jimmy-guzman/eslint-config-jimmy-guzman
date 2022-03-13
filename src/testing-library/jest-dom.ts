@@ -6,25 +6,25 @@ import { EslintRules } from '../models'
 export const jestDomRules: EslintRules = {
   /**
    * (jest-dom/prefer-checked)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-checked.md]
-   * - TYPE: `best-practices`
+   * - TYPE: `♻️ best-practices`
    * - RATIONALE: Prevent false positives and improve readability
    */
   'jest-dom/prefer-checked': 'error',
   /**
    * (jest-dom/prefer-empty)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-empty.md]
-   * - TYPE: `stylistic`
+   * - TYPE: `🎨 stylistic`
    * - RATIONALE: Ensures people will use toBeEmptyDOMElement() rather than checking dom nodes/properties
    */
   'jest-dom/prefer-empty': 'error',
   /**
    * (jest-dom/prefer-enabled-disabled)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-enabled-disabled.md]
-   * - TYPE: `best-practices`
+   * - TYPE: `♻️ best-practices`
    * - RATIONALE: Prevent false positives and improve readability
    */
   'jest-dom/prefer-enabled-disabled': 'error',
   /**
    * (jest-dom/prefer-focus)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-focus.md]
-   * - TYPE: `stylistic`
+   * - TYPE: `🎨 stylistic`
    * - RATIONALE: Improve readability & consistency
    */
   'jest-dom/prefer-focus': 'error',
@@ -36,37 +36,37 @@ export const jestDomRules: EslintRules = {
   'jest-dom/prefer-in-document': 'error',
   /**
    * (jest-dom/prefer-required)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-required.md]
-   * - TYPE: `best-practices`
+   * - TYPE: `♻️ best-practices`
    * - RATIONALE: prevent false positives and improve readability
    */
   'jest-dom/prefer-required': 'error',
   /**
    * (jest-dom/prefer-to-have-attribute)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-to-have-attribute.md]
-   * - TYPE: `stylistic`
+   * - TYPE: `🎨 stylistic`
    * - RATIONALE: Improve readability & consistency
    */
   'jest-dom/prefer-to-have-attribute': 'error',
   /**
    * (jest-dom/prefer-to-have-class)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-to-have-class.md]
-   * - TYPE: `stylistic`
+   * - TYPE: `🎨 stylistic`
    * - RATIONALE: Improve readability & consistency
    */
   'jest-dom/prefer-to-have-class': 'error',
   /**
    * (jest-dom/prefer-to-have-style)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-to-have-style.md]
-   * - TYPE: `stylistic`
+   * - TYPE: `🎨 stylistic`
    * - RATIONALE: Improve readability & consistency
    */
   'jest-dom/prefer-to-have-style': 'error',
   /**
    * (jest-dom/prefer-to-have-text-content)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-to-have-text-content.md]
-   * - TYPE: `stylistic`
+   * - TYPE: `🎨 stylistic`
    * - RATIONALE: Improve readability & consistency
    */
   'jest-dom/prefer-to-have-text-content': 'error',
   /**
    * (jest-dom/prefer-to-have-value)[https://github.com/testing-library/eslint-plugin-jest-dom/blob/v4.0.1/docs/rules/prefer-to-have-value.md]
-   * - TYPE: `stylistic`
+   * - TYPE: `🎨 stylistic`
    * - RATIONALE: Improve readability & consistency
    */
   'jest-dom/prefer-to-have-value': 'error',

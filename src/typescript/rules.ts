@@ -145,7 +145,7 @@ export const rules: EslintRules = {
   /**
    * [no-throw-literal](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-throw-literal.md)
    * - TYPE: `♻️ best-practices`
-   * - RATIONALE: It is considered good practice to only throw the `Error` object itself or an object using the `Error` because they automatically keep track of where they were built and originated
+   * - RATIONALE: It is considered good practice to only throw the `🚨 error` object itself or an object using the `🚨 error` because they automatically keep track of where they were built and originated
    */
   '@typescript-eslint/no-throw-literal': [
     'error',
