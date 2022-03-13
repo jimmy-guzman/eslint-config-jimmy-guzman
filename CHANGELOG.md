@@ -1,3 +1,16 @@
+# [3.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.1.0...v3.0.0) (2022-03-13)
+
+
+### Features
+
+* **typescript:** ✨ bump `[@typescript-eslint](https://github.com/typescript-eslint)` to `^5.14.0` for new rules ([a5830e4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/a5830e467790e7bd235b6a60c837fba9f773fd7b))
+
+
+### BREAKING CHANGES
+
+* **typescript:** 💥 both `no-redundant-type-constituents` &
+`no-useless-empty-export` require fixes
+
 # [2.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.0.2...v2.1.0) (2022-03-13)
 
 
