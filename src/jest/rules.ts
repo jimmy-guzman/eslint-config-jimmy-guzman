@@ -7,11 +7,14 @@ const overrides = <const>{
   'react/display-name': 'off',
 }
 
+/**
+ * https://github.com/jest-community/eslint-plugin-jest/tree/v26.1.1/docs/rules
+ */
 export const rules: EslintRules = {
   'jest/consistent-test-it': ['error', { fn: 'test', withinDescribe: 'it' }],
   'jest/expect-expect': 'warn',
   /**
-   * [jest/max-nested-describe](https://github.com/jest-community/eslint-plugin-jest/blob/v25.2.4/docs/rules/max-nested-describe.md)
+   * [jest/max-nested-describe](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/max-nested-describe.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: having too many levels of nesting throughout your tests make them difficult to read
    */
@@ -22,7 +25,7 @@ export const rules: EslintRules = {
     },
   ],
   /**
-   * [jest/no-alias-methods](https://github.com/jest-community/eslint-plugin-jest/blob/v25.2.4/docs/rules/no-alias-methods.md)
+   * [jest/no-alias-methods](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/no-alias-methods.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: helps ensure consistency among the method names used
    */
@@ -33,6 +36,12 @@ export const rules: EslintRules = {
    * - RATIONALE: Jest considers a test failure only if an assertion throws so catching or making an assertion a conditional can be error prone.
    */
   'jest/no-conditional-expect': 'error',
+  /**
+   * [jest/no-conditional-in-test](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/no-conditional-in-test.md)
+   * - TYPE: `♻️ best-practices`
+   * - RATIONALE: Conditional logic in tests is usually an indication that a test is attempting to cover too much, and not testing the logic it intends to.
+   */
+  'jest/no-conditional-in-test': 'error',
   'jest/no-deprecated-functions': 'warn',
   'jest/no-disabled-tests': 'warn',
   /**
@@ -45,7 +54,7 @@ export const rules: EslintRules = {
   'jest/no-focused-tests': 'error',
   'jest/no-hooks': 'off',
   'jest/no-identical-title': 'error',
-  'jest/no-if': 'error',
+  'jest/no-if': 'off',
   /**
    * Disallow string interpolation inside snapshots
    * - https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/no-interpolation-in-snapshots.md
@@ -66,9 +75,21 @@ export const rules: EslintRules = {
   'jest/no-test-prefixes': 'error',
   'jest/no-test-return-statement': 'off',
   'jest/prefer-called-with': 'error',
+  /**
+   * [jest/prefer-comparison-matcher](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/prefer-comparison-matcher.md)
+   * - TYPE: `♻️ best-practices`
+   * - RATIONALE: Using built-in matchers for comparing numbers which allow for more readable tests and error messages if an expectation fails
+   */
+  'jest/prefer-comparison-matcher': 'error',
+  /**
+   * [jest/prefer-equality-matcher](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/prefer-equality-matcher.md)
+   * - TYPE: `♻️ best-practices`
+   * - RATIONALE: Using built-in matchers for comparing numbers which allow for more readable tests and error messages if an expectation fails
+   */
+  'jest/prefer-equality-matcher': 'error',
   'jest/prefer-expect-assertions': 'off',
   /**
-   * [jest/prefer-expect-resolves](https://github.com/jest-community/eslint-plugin-jest/blob/v25.2.4/docs/rules/prefer-expect-resolves.md)
+   * [jest/prefer-expect-resolves](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/prefer-expect-resolves.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: more predictable behavior and output from jest and consistency
    */
@@ -79,16 +100,22 @@ export const rules: EslintRules = {
    * - RATIONALE: This provides more readable test failures
    */
   'jest/prefer-lowercase-title': 'error',
+  /**
+   * [jest/prefer-snapshot-hint](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/prefer-snapshot-hint.md)
+   * - TYPE: `♻️ best-practices`
+   * - RATIONALE: Makes it easier for reviewers to verify the snapshots during review when they are multiple snapshots
+   */
+  'jest/prefer-snapshot-hint': 'error',
   'jest/prefer-spy-on': 'off',
   'jest/prefer-strict-equal': 'off',
   /**
-   * [jest/prefer-to-be](https://github.com/jest-community/eslint-plugin-jest/blob/v25.2.4/docs/rules/prefer-to-be.md)
+   * [jest/prefer-to-be](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/prefer-to-be.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: mainly for better error messages
    */
   'jest/prefer-to-be': 'error',
   /**
-   * [jest/prefer-to-contain](https://github.com/jest-community/eslint-plugin-jest/blob/v25.2.4/docs/rules/prefer-to-contain.md)
+   * [jest/prefer-to-contain](https://github.com/jest-community/eslint-plugin-jest/blob/v26.1.1/docs/rules/prefer-to-contain.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: mainly for better failure messages
    */
