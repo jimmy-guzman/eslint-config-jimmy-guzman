@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.0.2...v2.1.0) (2022-03-13)
+
+
+### Features
+
+* **testing-library:** ✨ add both `testing-library` & `jest-dom` rules ([1fb5e0f](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/1fb5e0f2021bac0c1d39b7091e7c7804383ec12c)), closes [#24](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/24)
+
 ## [2.0.2](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.0.1...v2.0.2) (2022-01-12)
 
 
