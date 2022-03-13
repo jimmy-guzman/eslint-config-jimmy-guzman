@@ -1,3 +1,16 @@
+# [4.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v3.0.0...v4.0.0) (2022-03-13)
+
+
+### Features
+
+* **jest:** ✨ bump `eslint-plugin-jest` to `^26.1.1` for new rules ([afd993c](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/afd993c495a73a5bc6100092af5ce818b9a8983f))
+
+
+### BREAKING CHANGES
+
+* **jest:** 💥 `prefer-snapshot-hint`, `prefer-equality-matcher` and
+`prefer-comparison-matcher` require fixes.
+
 # [3.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v2.1.0...v3.0.0) (2022-03-13)
 
 
