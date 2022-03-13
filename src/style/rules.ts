@@ -350,9 +350,9 @@ export const rules: EslintRules = {
   /**
    * []()
    * - TYPE: `🎨 stylistic`
-   * - RATIONALE:
+   * - RATIONALE: Enforces consistent spacing before blocks but `prettier` takes care of it
    */
-  'space-before-blocks': 'error',
+  'space-before-blocks': 'off',
   /**
    * []()
    * - TYPE: `🎨 stylistic`
