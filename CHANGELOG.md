@@ -3,7 +3,7 @@
 
 ### Features
 
-* **typescript:** ✨ bump `[@typescript-eslint](https://github.com/typescript-eslint)` to `^5.14.0` for new rules ([a5830e4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/a5830e467790e7bd235b6a60c837fba9f773fd7b))
+* **typescript:** ✨ bump [@typescript-eslint](https://github.com/typescript-eslint) to `^5.14.0` for new rules ([a5830e4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/a5830e467790e7bd235b6a60c837fba9f773fd7b))
 
 
 ### BREAKING CHANGES
@@ -31,7 +31,7 @@
 ### Bug Fixes
 
 * **react:** 🐛 always include `prettier` overrides ([8f965a4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/8f965a49facc5e9923ca78d576f317d75d5c5ed6))
-* **typescript:** 🐛 always include `prettier` overrrides ([09c3cdd](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/09c3cdd31c95de254ed769b8935477dd20a650ca))
+* **typescript:** 🐛 always include `prettier` overrides ([09c3cdd](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/09c3cdd31c95de254ed769b8935477dd20a650ca))
 
 # [2.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v1.2.2...v2.0.0) (2022-01-11)
 
