@@ -89,7 +89,7 @@
     "esbuild-jest": "0.5.0",
     "eslint": "8.11.0",
     "eslint-find-rules": "4.1.0",
-    "gitzy": "3.1.0",
+    "gitzy": "3.2.0",
     "husky": "7.0.4",
     "is-ci": "3.0.1",
     "jest": "27.5.1",
