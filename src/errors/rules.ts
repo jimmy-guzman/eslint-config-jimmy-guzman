@@ -16,6 +16,12 @@ export const rules: EslintRules = {
   'no-compare-neg-zero': 'error',
   'no-cond-assign': 'error',
   'no-const-assign': 'error',
+  /**
+   * [no-constant-binary-expression](https://eslint.org/docs/rules/no-constant-binary-expression)
+   * - TYPE: `🚨 error`
+   * - RATIONALE: Comparisons which will always evaluate to true or false and logical expressions (`||`, `&&`, `??`) which either always short-circuit or never short-circuit are both likely indications of programmer error.
+   */
+  'no-constant-binary-expression': 'error',
   'no-constant-condition': 'error',
   'no-control-regex': 'error',
   'no-debugger': 'error',

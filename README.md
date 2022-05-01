@@ -22,7 +22,7 @@
 
 ## Installation:
 
-**This requires the peer dependencies:** `eslint@^8.2.0`, `typescript@^4.4.0`, and `prettier@^2.4.0`.
+**This requires the peer dependencies:** `eslint@^8.14.0`, `typescript@^4.5.0`, and `prettier@^2.4.0`.
 
 _To easily install everything you can leverage [`install-peerdeps`][install-peerdeps], i.e_
 
