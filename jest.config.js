@@ -9,7 +9,7 @@ module.exports = {
   },
   transform: {
     '^.+\\.tsx?$': [
-      'esbuild-jest',
+      'esbuild-runner/jest',
       {
         sourcemap: true,
       },
