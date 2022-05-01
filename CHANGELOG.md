@@ -1,3 +1,16 @@
+# [5.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v4.0.0...v5.0.0) (2022-05-01)
+
+
+### Features
+
+* **base:** ✨ add `no-constant-binary-expression` rule ([b971844](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/b971844ab62c810253c481c7b1c2e04117fc050a)), closes [#88](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/88)
+
+
+### BREAKING CHANGES
+
+* **base:** 💥 `no-constant-binary-expression` requires `eslint`
+version `8.14.0` and it's not automatically fixable
+
 # [4.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v3.0.0...v4.0.0) (2022-03-13)
 
 
