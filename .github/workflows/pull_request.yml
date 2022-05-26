@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - name: setup pnpm
-        uses: pnpm/action-setup@10b4b0b462cfa1a30381c9d7c242194165a466ab
+        uses: pnpm/action-setup@57b9359b4c69c79ca51422d02ca739a7957f4aed
         with:
           version: 6.21.1
 
@@ -69,7 +69,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: streetsidesoftware/cspell-action@v1.6.2
+      - uses: streetsidesoftware/cspell-action@v2.0.1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           inline: error
