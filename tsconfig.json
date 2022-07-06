@@ -17,7 +17,8 @@
     "module": "commonjs",
     "outDir": "dist",
     "rootDir": "src",
-    "target": "esnext"
+    "target": "esnext",
+    "types": ["vitest/globals"]
   },
   "include": ["src/**/*"],
   "exclude": ["dist/"]

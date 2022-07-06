@@ -46,7 +46,7 @@ jobs:
       - name: codecov
         uses: codecov/codecov-action@v3
         with:
-          file: ./coverage/lcov.info
+          file: ./coverage/coverage-final.json
 
   commit_check:
     runs-on: ubuntu-latest
