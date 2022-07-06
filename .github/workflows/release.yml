@@ -43,7 +43,7 @@ jobs:
       - name: codecov
         uses: codecov/codecov-action@v3
         with:
-          file: ./coverage/lcov.info
+          file: ./coverage/coverage-final.json
 
       - name: publish to npm
         env:

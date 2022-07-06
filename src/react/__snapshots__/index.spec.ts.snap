@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`react should export react rules config 1`] = `
+exports[`react > should export react rules config 1`] = `
 {
   "extends": [
     "prettier",

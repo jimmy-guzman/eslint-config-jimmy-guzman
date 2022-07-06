@@ -57,6 +57,7 @@
     "transpiles",
     "treegrid",
     "typeof",
+    "vitest",
     "wagoid"
   ],
   "ignorePaths": ["pnpm-lock.yaml", ".gitignore", ".vscode"]
