@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`errors should export errors rules config 1`] = `
+exports[`errors > should export errors rules config 1`] = `
 {
   "rules": {
     "constructor-super": "error",

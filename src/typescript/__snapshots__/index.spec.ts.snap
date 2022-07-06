@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`typescript should export typescript rules config 1`] = `
+exports[`typescript > should export typescript rules config 1`] = `
 {
   "extends": [
     "prettier",
