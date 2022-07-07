@@ -1,3 +1,17 @@
+# [6.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v5.0.0...v6.0.0) (2022-07-07)
+
+
+### Features
+
+* **typescript:** ✨ enable and add new rules ([f7425ad](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/f7425ad4894e6791728979cad62ba1a1b8fae8d5)), closes [#119](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/119)
+
+
+### BREAKING CHANGES
+
+* **typescript:** 💥 `consistent-type-imports`, `consistent-type-exports`,
+`no-duplicate-enum-values` and `consistent-generic-constructor` potentially
+require fixes
+
 # [5.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v4.0.0...v5.0.0) (2022-05-01)
 
 
