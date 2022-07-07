@@ -1,4 +1,7 @@
+/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
   coverageThreshold: {
     global: {
       branches: 100,
@@ -6,13 +9,5 @@ module.exports = {
       lines: 100,
       statements: 100,
     },
-  },
-  transform: {
-    '^.+\\.tsx?$': [
-      'esbuild-runner/jest',
-      {
-        sourcemap: true,
-      },
-    ],
   },
 }

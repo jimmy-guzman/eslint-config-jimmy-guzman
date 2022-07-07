@@ -13,7 +13,7 @@ jobs:
           fetch-depth: 0
 
       - name: setup pnpm
-        uses: pnpm/action-setup@57b9359b4c69c79ca51422d02ca739a7957f4aed
+        uses: pnpm/action-setup@v2.2.2
         with:
           version: 6.21.1
       - name: setup cache
