@@ -1,4 +1,4 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
 
 export const jsxA11yRules: EslintRules = {
   'jsx-a11y/alt-text': 'error',

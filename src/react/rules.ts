@@ -1,4 +1,5 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
+
 import { jsxA11yRules } from './jsx-a11y'
 import { eslintOverrides } from './overrides'
 

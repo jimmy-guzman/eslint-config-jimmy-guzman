@@ -1,4 +1,4 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
 
 export const importDuplicates: EslintRules = {
   'import/no-duplicates': 'off',

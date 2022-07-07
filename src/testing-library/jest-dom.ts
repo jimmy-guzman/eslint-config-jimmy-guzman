@@ -1,4 +1,4 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
 
 /**
  * https://github.com/testing-library/eslint-plugin-jest-dom/tree/v4.0.1/docs/rules

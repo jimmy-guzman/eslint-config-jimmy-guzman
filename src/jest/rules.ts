@@ -1,4 +1,4 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
 
 const overrides = <const>{
   'max-classes-per-file': 'off',
