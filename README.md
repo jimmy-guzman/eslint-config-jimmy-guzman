@@ -30,7 +30,7 @@ _To easily install everything you can leverage [`install-peerdeps`][install-peer
 | --------------- | ------------------------------------------------------------------- |
 | yarn/npm        | `npx install-peerdeps --dev eslint-config-jimmy-guzman`             |
 | yarn workspaces | `npx install-peerdeps eslint-config-jimmy-guzman --dev -yarn -x -W` |
-| pnpm            | `pnpm dlx install-peerdeps eslint-config-jimmy-guzman --dev -pnpm`  |
+| pnpm            | `pnpm dlx install-peerdeps eslint-config-jimmy-guzman --dev --pnpm` |
 
 ## Configuration
 
