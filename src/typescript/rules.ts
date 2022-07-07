@@ -1,8 +1,9 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
+
 import { namingConventions } from './naming-conventions'
 
 /**
- * https://github.com/typescript-eslint/typescript-eslint/tree/v5.14.0/packages/eslint-plugin/docs/rules
+ * https://github.com/typescript-eslint/typescript-eslint/tree/v5.30.5/packages/eslint-plugin/docs/rules
  */
 export const rules: EslintRules = {
   '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -24,23 +25,40 @@ export const rules: EslintRules = {
    * - NOTES: fixable
    */
   '@typescript-eslint/class-literal-property-style': 'off', // revisit
+  /**
+   * [@typescript-eslint/consistent-generic-constructors](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/consistent-generic-constructors.md)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: offers consistency throughout projects and attempts to avoid leaked `any`s
+   */
+  '@typescript-eslint/consistent-generic-constructors': [
+    'error',
+    'constructor',
+  ],
   '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'], // fixable
   '@typescript-eslint/consistent-type-assertions': 'off', // revisit
   '@typescript-eslint/consistent-type-definitions': ['error', 'interface'], // fixable
   /**
-   * [@typescript-eslint/consistent-type-exports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/consistent-type-exports.md)
+   * [@typescript-eslint/consistent-type-exports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/consistent-type-exports.md)
    * - TYPE: `🎨 stylistic`
-   * - RATIONALE: N/A
+   * - RATIONALE: Typed exports allow transpilers to drop exports without knowing the types of the dependencies.
    */
-  '@typescript-eslint/consistent-type-exports': 'off',
+  '@typescript-eslint/consistent-type-exports': [
+    'error',
+    { fixMixedExportsWithInlineTypeSpecifier: true },
+  ],
   /**
-   * - NOTES: fixable
+   * [@typescript-eslint/consistent-type-imports](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/consistent-type-imports.md)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: Type-only imports allow you to specify that an import can only be used in a type location, allowing certain optimizations within compilers
    */
-  '@typescript-eslint/consistent-type-imports': 'off', // revisit
+  '@typescript-eslint/consistent-type-imports': [
+    'error',
+    { prefer: 'type-imports', disallowTypeAnnotations: true },
+  ],
   '@typescript-eslint/default-param-last': 'error',
   '@typescript-eslint/dot-notation': 'error', // fixable
   /**
-   * [@typescript-eslint/explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
+   * [@typescript-eslint/explicit-function-return-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/explicit-function-return-type.md)
    * - TYPE: `♻️ best-practice`
    * - RATIONALE: Explicit types for function return values makes it clear to any calling code what type is returned but this can be annoying and by having `explicit-module-boundary-types` it should suffice
    */
@@ -50,7 +68,7 @@ export const rules: EslintRules = {
    */
   '@typescript-eslint/explicit-member-accessibility': 'off', // revisit
   /**
-   * [@typescript-eslint/explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md)
+   * [@typescript-eslint/explicit-module-boundary-types](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/explicit-module-boundary-types.md)
    * - TYPE: `♻️ best-practice`
    * - RATIONALE: Explicit types for function return values and arguments makes it clear to any calling code what is the module boundary's input and output
    */
@@ -71,7 +89,7 @@ export const rules: EslintRules = {
   ],
   '@typescript-eslint/method-signature-style': ['error', 'property'], // fixable
   /**
-   * [@typescript-eslint/naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/naming-convention.md)
+   * [@typescript-eslint/naming-convention](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/naming-convention.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: Enforcing naming conventions helps keep the codebase consistent, and reduces overhead when thinking about how to name a variable.
    */
@@ -80,7 +98,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-base-to-string': 'warn',
   '@typescript-eslint/no-confusing-non-null-assertion': 'off', //fixable
   /**
-   * [@typescript-eslint/no-confusing-void-expression](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md)
+   * [@typescript-eslint/no-confusing-void-expression](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-confusing-void-expression.md)
    * - TYPE: `♻️ best-practice`
    * - RATIONALE: Returning the results of an expression whose type is void can be misleading. `ignoreArrowShorthand` is enabled since it collides with `prettier`
    * - FIXABLE: true
@@ -90,6 +108,12 @@ export const rules: EslintRules = {
     { ignoreArrowShorthand: true, ignoreVoidOperator: false },
   ],
   '@typescript-eslint/no-dupe-class-members': 'off',
+  /**
+   * [@typescript-eslint/no-duplicate-enum-values](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-duplicate-enum-values.md)
+   * - TYPE: `🚨 error`
+   * - RATIONALE: Duplicate values can lead to bugs that are hard to track down.
+   */
+  '@typescript-eslint/no-duplicate-enum-values': 'error',
   '@typescript-eslint/no-duplicate-imports': 'error',
   '@typescript-eslint/no-dynamic-delete': 'error', // fixable
   '@typescript-eslint/no-empty-function': 'error',
@@ -109,7 +133,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-loss-of-precision': 'error',
   '@typescript-eslint/no-magic-numbers': 'off',
   /**
-   * [@typescript-eslint/no-meaningless-void-operator](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-meaningless-void-operator.md)
+   * [@typescript-eslint/no-meaningless-void-operator](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-meaningless-void-operator.md)
    * - TYPE: `♻️ best-practices`
    * - RATIONALE: Helps an author catch API changes where previously a value was being discarded at a call site, but the callee changed so it no longer returns a value
    */
@@ -118,7 +142,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-misused-promises': 'warn',
   '@typescript-eslint/no-namespace': 'error',
   /**
-   * [@typescript-eslint/no-non-null-asserted-nullish-coalescing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-non-null-asserted-nullish-coalescing.md)
+   * [@typescript-eslint/no-non-null-asserted-nullish-coalescing](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-non-null-asserted-nullish-coalescing.md)
    * - TYPE: `♻️ best-practices`
    * - RATIONALE: Using non-null assertions in the left operand of the nullish coalescing operator is redundant
    */
@@ -128,7 +152,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-parameter-properties': 'error',
   '@typescript-eslint/no-redeclare': 'off',
   /**
-   * [@typescript-eslint/no-redundant-type-constituents](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-redundant-type-constituents.md)
+   * [@typescript-eslint/no-redundant-type-constituents](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-redundant-type-constituents.md)
    * - TYPE:  `🚨 error`
    * - RATIONALE: Disallow members of unions and intersections that do nothing or override type information.
    */
@@ -143,7 +167,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-shadow': 'error',
   '@typescript-eslint/no-this-alias': 'error',
   /**
-   * [no-throw-literal](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-throw-literal.md)
+   * [no-throw-literal](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-throw-literal.md)
    * - TYPE: `♻️ best-practices`
    * - RATIONALE: It is considered good practice to only throw the `🚨 error` object itself or an object using the `🚨 error` because they automatically keep track of where they were built and originated
    */
@@ -162,7 +186,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-unnecessary-type-assertion': 'error', // fixable
   '@typescript-eslint/no-unnecessary-type-constraint': 'error', // fixable
   /**
-   * [@typescript-eslint/no-unsafe-argument](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-unsafe-argument.md)
+   * [@typescript-eslint/no-unsafe-argument](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-unsafe-argument.md)
    * - TYPE: `♻️ best-practices`
    * - RATIONALE: Calling a function with `any` typed argument can create a potential safety hole, and source of bugs in your codebase
    */
@@ -176,24 +200,30 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-use-before-define': ['error', 'nofunc'],
   '@typescript-eslint/no-useless-constructor': 'off',
   /**
-   * [@typescript-eslint/no-useless-empty-export](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/no-useless-empty-export.md)
+   * [@typescript-eslint/no-useless-empty-export](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/no-useless-empty-export.md)
    * - TYPE:  `♻️ best-practices`
    * - RATIONALE: Disallow empty exports that don't change anything in a module file since they don't do anything.
    */
   '@typescript-eslint/no-useless-empty-export': 'error',
   '@typescript-eslint/no-var-requires': 'error',
   /**
-   * [@typescript-eslint/non-nullable-type-assertion-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/non-nullable-type-assertion-style.md)
+   * [@typescript-eslint/non-nullable-type-assertion-style](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/non-nullable-type-assertion-style.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: Verbose type casts offer more information
    */
   '@typescript-eslint/non-nullable-type-assertion-style': 'off',
   /**
-   * [@typescript-eslint/padding-line-between-statement](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
+   * [@typescript-eslint/padding-line-between-statement](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/padding-line-between-statements.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: padding between types or interface definitions does not improve readability
    */
   '@typescript-eslint/padding-line-between-statements': 'off',
+  /**
+   * [@typescript-eslint/parameter-properties](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/parameter-properties.md)
+   * - TYPE: `♻️ best-practices`
+   * - RATIONALE:
+   */
+  '@typescript-eslint/parameter-properties': 'off', // revisit
   '@typescript-eslint/prefer-as-const': 'error',
   '@typescript-eslint/prefer-enum-initializers': 'error',
   '@typescript-eslint/prefer-for-of': 'error',
@@ -208,7 +238,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/prefer-reduce-type-parameter': 'warn', // fixable
   '@typescript-eslint/prefer-regexp-exec': 'error',
   /**
-   * [@typescript-eslint/prefer-return-this-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/prefer-return-this-type.md)
+   * [@typescript-eslint/prefer-return-this-type](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/prefer-return-this-type.md)
    * - TYPE: N/A
    * - RATIONALE: N/A
    */
@@ -222,13 +252,13 @@ export const rules: EslintRules = {
   '@typescript-eslint/restrict-template-expressions': 'off',
   '@typescript-eslint/return-await': 'error', // fixable
   /**
-   * [@typescript-eslint/sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
+   * [@typescript-eslint/sort-type-union-intersection-members](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/sort-type-union-intersection-members.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: Sorting can help keep your codebase standardized, find repeated types and reduce diff churn
    */
   '@typescript-eslint/sort-type-union-intersection-members': 'error',
   /**
-   * [@typescript-eslint/space-before-blocks](https://github.com/typescript-eslint/typescript-eslint/blob/v5.14.0/packages/eslint-plugin/docs/rules/space-before-blocks.md)
+   * [@typescript-eslint/space-before-blocks](https://github.com/typescript-eslint/typescript-eslint/blob/v5.30.5/packages/eslint-plugin/docs/rules/space-before-blocks.md)
    * - TYPE:  `♻️ best-practices`
    * - RATIONALE: Enforces consistent spacing before blocks but `prettier` takes care of it
    */

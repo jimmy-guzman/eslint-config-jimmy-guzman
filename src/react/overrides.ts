@@ -1,4 +1,4 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
 
 export const eslintOverrides: EslintRules = {
   'class-methods-use-this': [

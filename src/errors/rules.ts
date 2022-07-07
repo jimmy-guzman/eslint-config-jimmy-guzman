@@ -1,4 +1,4 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
 
 export const rules: EslintRules = {
   'constructor-super': 'error',

@@ -1,4 +1,5 @@
-import { EslintRules } from '../models'
+import type { EslintRules } from '../models'
+
 import { deprecatedEslintRules } from './deprecated'
 
 export const rules: EslintRules = {

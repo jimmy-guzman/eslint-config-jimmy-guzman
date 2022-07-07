@@ -22,6 +22,10 @@ Object {
         "@typescript-eslint/ban-tslint-comment": "error",
         "@typescript-eslint/ban-types": "error",
         "@typescript-eslint/class-literal-property-style": "off",
+        "@typescript-eslint/consistent-generic-constructors": Array [
+          "error",
+          "constructor",
+        ],
         "@typescript-eslint/consistent-indexed-object-style": Array [
           "error",
           "record",
@@ -31,8 +35,19 @@ Object {
           "error",
           "interface",
         ],
-        "@typescript-eslint/consistent-type-exports": "off",
-        "@typescript-eslint/consistent-type-imports": "off",
+        "@typescript-eslint/consistent-type-exports": Array [
+          "error",
+          Object {
+            "fixMixedExportsWithInlineTypeSpecifier": true,
+          },
+        ],
+        "@typescript-eslint/consistent-type-imports": Array [
+          "error",
+          Object {
+            "disallowTypeAnnotations": true,
+            "prefer": "type-imports",
+          },
+        ],
         "@typescript-eslint/default-param-last": "error",
         "@typescript-eslint/dot-notation": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
@@ -168,6 +183,7 @@ Object {
           },
         ],
         "@typescript-eslint/no-dupe-class-members": "off",
+        "@typescript-eslint/no-duplicate-enum-values": "error",
         "@typescript-eslint/no-duplicate-imports": "error",
         "@typescript-eslint/no-dynamic-delete": "error",
         "@typescript-eslint/no-empty-function": "error",
@@ -230,6 +246,7 @@ Object {
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/non-nullable-type-assertion-style": "off",
         "@typescript-eslint/padding-line-between-statements": "off",
+        "@typescript-eslint/parameter-properties": "off",
         "@typescript-eslint/prefer-as-const": "error",
         "@typescript-eslint/prefer-enum-initializers": "error",
         "@typescript-eslint/prefer-for-of": "error",
