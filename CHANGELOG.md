@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v6.0.0...v7.0.0) (2022-07-24)
+
+
+### Features
+
+* ✨ add support for node 18 and drop node 12 ([#131](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/131)) ([cab9ac7](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/cab9ac772d5f14044d23783425621f2c0e091ae4)), closes [#118](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/118)
+
+
+### BREAKING CHANGES
+
+* 💥 minimum node version is 14
+
 # [6.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v5.0.0...v6.0.0) (2022-07-07)
 
 
