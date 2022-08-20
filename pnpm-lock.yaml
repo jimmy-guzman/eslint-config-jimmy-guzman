@@ -9,7 +9,7 @@ specifiers:
   '@semantic-release/github': 8.0.5
   '@semantic-release/npm': 9.0.1
   '@semantic-release/release-notes-generator': 10.0.3
-  '@types/jest': 28.1.6
+  '@types/jest': 28.1.7
   '@types/node': 16.11.48
   '@typescript-eslint/eslint-plugin': ^5.30.5
   '@typescript-eslint/parser': ^5.30.5
@@ -57,7 +57,7 @@ devDependencies:
   '@semantic-release/github': 8.0.5_semantic-release@19.0.3
   '@semantic-release/npm': 9.0.1_semantic-release@19.0.3
   '@semantic-release/release-notes-generator': 10.0.3_semantic-release@19.0.3
-  '@types/jest': 28.1.6
+  '@types/jest': 28.1.7
   '@types/node': 16.11.48
   commitlint: 17.0.3
   esbuild: 0.15.3
@@ -1223,10 +1223,10 @@ packages:
     dependencies:
       '@types/istanbul-lib-report': 3.0.0
 
-  /@types/jest/28.1.6:
-    resolution: {integrity: sha512-0RbGAFMfcBJKOmqRazM8L98uokwuwD5F8rHrv/ZMbrZBwVOWZUyPG6VFNscjYr/vjM3Vu4fRrCPbOs42AfemaQ==}
+  /@types/jest/28.1.7:
+    resolution: {integrity: sha512-acDN4VHD40V24tgu0iC44jchXavRNVFXQ/E6Z5XNsswgoSO/4NgsXoEYmPUGookKldlZQyIpmrEXsHI9cA3ZTA==}
     dependencies:
-      jest-matcher-utils: 28.1.3
+      expect: 28.1.3
       pretty-format: 28.1.3
     dev: true
 
