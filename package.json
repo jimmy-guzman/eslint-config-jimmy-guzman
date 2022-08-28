@@ -87,7 +87,7 @@
     "@types/node": "16.11.52",
     "commitlint": "17.0.3",
     "esbuild": "0.15.5",
-    "eslint": "8.22.0",
+    "eslint": "8.23.0",
     "eslint-find-rules": "4.1.0",
     "gitzy": "3.4.0",
     "husky": "8.0.1",
