@@ -44,7 +44,6 @@ exports[`jest should export jest rules config 1`] = `
         "jest/no-if": "off",
         "jest/no-interpolation-in-snapshots": "error",
         "jest/no-jasmine-globals": "warn",
-        "jest/no-jest-import": "error",
         "jest/no-large-snapshots": [
           "warn",
           {
