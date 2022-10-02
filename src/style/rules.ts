@@ -83,6 +83,12 @@ export const rules: EslintRules = {
    */
   'lines-between-class-members': 'error',
   /**
+   * [logical-assignment-operators](https://eslint.org/docs/rules/logical-assignment-operators)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: leaving this rule turned off allows developers to choose which style is more readable on a case-by-case basis
+   */
+  'logical-assignment-operators': 'off',
+  /**
    * [max-depth](https://eslint.org/docs/rules/max-depth)
    * - TYPE: `♻️ best-practices`
    * - RATIONALE: improves readability by limiting the depth of nested blocks
