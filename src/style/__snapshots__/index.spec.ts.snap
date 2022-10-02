@@ -31,6 +31,7 @@ exports[`style should export style rules config 1`] = `
     "line-comment-position": "off",
     "lines-around-comment": "off",
     "lines-between-class-members": "error",
+    "logical-assignment-operators": "off",
     "max-depth": [
       "error",
       4,
