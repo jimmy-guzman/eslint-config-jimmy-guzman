@@ -86,7 +86,7 @@
     "@types/jest": "29.1.1",
     "@types/node": "16.11.56",
     "commitlint": "17.1.2",
-    "esbuild": "0.15.7",
+    "esbuild": "0.15.10",
     "eslint": "8.23.0",
     "eslint-find-rules": "4.1.0",
     "gitzy": "3.4.0",
