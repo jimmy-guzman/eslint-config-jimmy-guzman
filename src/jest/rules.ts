@@ -118,6 +118,12 @@ export const rules: EslintRules = {
    */
   'jest/prefer-lowercase-title': 'error',
   /**
+   * [jest/prefer-mock-promise-shorthand](https://github.com/jest-community/eslint-plugin-jest/blob/v27.0.0/docs/rules/prefer-mock-promise-shorthand.md)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: aims to reduce the amount of boilerplate you have to write when mocking promises
+   */
+  'jest/prefer-mock-promise-shorthand': 'error',
+  /**
    * [jest/prefer-snapshot-hint](https://github.com/jest-community/eslint-plugin-jest/blob/v27.0.0/docs/rules/prefer-snapshot-hint.md)
    * - TYPE: `♻️ best-practices`
    * - RATIONALE: Makes it easier for reviewers to verify the snapshots during review when they are multiple snapshots
