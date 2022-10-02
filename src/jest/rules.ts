@@ -14,6 +14,12 @@ export const rules: EslintRules = {
   'jest/consistent-test-it': ['error', { fn: 'test', withinDescribe: 'it' }],
   'jest/expect-expect': 'warn',
   /**
+   * [jest/max-expects](https://github.com/jest-community/eslint-plugin-jest/blob/v27.0.0/docs/rules/max-expects.md)
+   * - TYPE: `♻️ best-practices`
+   * - RATIONALE: Provides max assertions are made to prevent likely mix of multiple objectives when too many assertions
+   */
+  'jest/max-expects': 'error',
+  /**
    * [jest/max-nested-describe](https://github.com/jest-community/eslint-plugin-jest/blob/v27.0.0/docs/rules/max-nested-describe.md)
    * - TYPE: `🎨 stylistic`
    * - RATIONALE: having too many levels of nesting throughout your tests make them difficult to read
@@ -81,6 +87,12 @@ export const rules: EslintRules = {
    */
   'jest/prefer-comparison-matcher': 'error',
   /**
+   * [jest/prefer-each](https://github.com/jest-community/eslint-plugin-jest/blob/v27.0.0/docs/rules/prefer-each.md)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: generally you should be able to use .each instead which gives better output and makes it easier to run specific cases.
+   */
+  'jest/prefer-each': 'error',
+  /**
    * [jest/prefer-equality-matcher](https://github.com/jest-community/eslint-plugin-jest/blob/v27.0.0/docs/rules/prefer-equality-matcher.md)
    * - TYPE: `♻️ best-practices`
    * - RATIONALE: Using built-in matchers for comparing numbers which allow for more readable tests and error messages if an expectation fails
@@ -93,6 +105,12 @@ export const rules: EslintRules = {
    * - RATIONALE: more predictable behavior and output from jest and consistency
    */
   'jest/prefer-expect-resolves': 'error',
+  /**
+   * [jest/prefer-hooks-in-order](https://github.com/jest-community/eslint-plugin-jest/blob/v27.0.0/docs/rules/prefer-hooks-in-order.md)
+   * - TYPE: `🎨 stylistic`
+   * - RATIONALE: aims to make that more obvious by enforcing grouped hooks be setup in that order within tests.
+   */
+  'jest/prefer-hooks-in-order': 'error',
   'jest/prefer-hooks-on-top': 'error',
   /**
    * - TYPE: `🎨 stylistic`
