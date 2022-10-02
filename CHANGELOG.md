@@ -1,3 +1,22 @@
+# [8.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v7.0.0...v8.0.0) (2022-10-02)
+
+
+### Features
+
+* **jest:** ✨ add `max-expects`, `prefer-each`, & `prefer-hooks-in-order` ([02761f0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/02761f0ddfa5fba6a7df211341eb203a19bb2fc4))
+* **jest:** ✨ add `prefer-mock-promise-shorthand` rule ([94ace7f](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/94ace7f74e1e9b9b7a41aeec6442ffa52806a93f))
+* **jest:** ✨ remove `no-jest-import` rule ([9d96898](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/9d968985d35c816448dcb3433edd34481d5705d7))
+* **style:** ✨ leave `logical-assignment-operators` up to developers ([6fe8387](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/6fe8387077f76115a4a9bcf6a81c213389c149aa))
+* **typescript:** ✨ support `typescript` v4.8 ([a6c3ef8](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/a6c3ef8daf89ac4b3d8ff7b0de5d23942596be9a))
+
+
+### BREAKING CHANGES
+
+* **jest:** 💥 `max-expects`, `prefer-each`, & `prefer-hooks-in-order`
+require manual fixes
+* **style:** 💥 `logical-assignment-operators` requires at least
+`eslint` v8.24.0
+
 # [7.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v6.0.0...v7.0.0) (2022-07-24)
 
 
