@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`testing-library should export react rules config 1`] = `
-Object {
-  "overrides": Array [
-    Object {
-      "files": Array [
+{
+  "overrides": [
+    {
+      "files": [
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[jt]s?(x)",
       ],
-      "plugins": Array [
+      "plugins": [
         "testing-library",
         "jest-dom",
       ],
-      "rules": Object {
+      "rules": {
         "jest-dom/prefer-checked": "error",
         "jest-dom/prefer-empty": "error",
         "jest-dom/prefer-enabled-disabled": "error",
@@ -44,9 +44,9 @@ Object {
         "testing-library/no-wait-for-snapshot": "error",
         "testing-library/prefer-explicit-assert": "off",
         "testing-library/prefer-find-by": "error",
-        "testing-library/prefer-presence-queries": Array [
+        "testing-library/prefer-presence-queries": [
           "error",
-          Object {
+          {
             "absence": true,
             "presence": true,
           },

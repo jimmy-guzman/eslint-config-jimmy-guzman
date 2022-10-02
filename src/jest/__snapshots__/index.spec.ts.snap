@@ -1,31 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`jest should export jest rules config 1`] = `
-Object {
-  "overrides": Array [
-    Object {
-      "env": Object {
+{
+  "overrides": [
+    {
+      "env": {
         "jest/globals": true,
       },
-      "files": Array [
+      "files": [
         "**/__tests__/**/*.[jt]s?(x)",
         "**/?(*.)+(spec|test).[jt]s?(x)",
       ],
-      "plugins": Array [
+      "plugins": [
         "jest",
       ],
-      "rules": Object {
-        "jest/consistent-test-it": Array [
+      "rules": {
+        "jest/consistent-test-it": [
           "error",
-          Object {
+          {
             "fn": "test",
             "withinDescribe": "it",
           },
         ],
         "jest/expect-expect": "warn",
-        "jest/max-nested-describe": Array [
+        "jest/max-nested-describe": [
           "error",
-          Object {
+          {
             "max": 2,
           },
         ],
@@ -45,9 +45,9 @@ Object {
         "jest/no-interpolation-in-snapshots": "error",
         "jest/no-jasmine-globals": "warn",
         "jest/no-jest-import": "error",
-        "jest/no-large-snapshots": Array [
+        "jest/no-large-snapshots": [
           "warn",
-          Object {
+          {
             "inlineMaxSize": 6,
             "maxSize": 60,
           },

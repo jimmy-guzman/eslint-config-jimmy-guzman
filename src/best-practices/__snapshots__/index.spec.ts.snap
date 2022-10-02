@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`bestPractices should export bestPractices rules config 1`] = `
-Object {
-  "rules": Object {
+{
+  "rules": {
     "accessor-pairs": "warn",
     "array-callback-return": "error",
     "block-scoped-var": "error",
-    "class-methods-use-this": Array [
+    "class-methods-use-this": [
       "error",
-      Object {
-        "exceptMethods": Array [],
+      {
+        "exceptMethods": [],
       },
     ],
-    "complexity": Array [
+    "complexity": [
       "error",
       10,
     ],
@@ -20,12 +20,12 @@ Object {
     "curly": "error",
     "default-case": "error",
     "default-case-last": "error",
-    "default-param-last": Array [
+    "default-param-last": [
       "error",
     ],
     "dot-notation": "error",
     "eqeqeq": "error",
-    "grouped-accessor-pairs": Array [
+    "grouped-accessor-pairs": [
       "error",
       "getBeforeSet",
     ],
@@ -37,10 +37,10 @@ Object {
     "no-constructor-return": "error",
     "no-div-regex": "error",
     "no-else-return": "error",
-    "no-empty-function": Array [
+    "no-empty-function": [
       "error",
-      Object {
-        "allow": Array [
+      {
+        "allow": [
           "arrowFunctions",
           "functions",
           "methods",
@@ -52,10 +52,10 @@ Object {
     "no-extend-native": "error",
     "no-extra-bind": "error",
     "no-extra-label": "error",
-    "no-implicit-coercion": Array [
+    "no-implicit-coercion": [
       "error",
-      Object {
-        "allow": Array [],
+      {
+        "allow": [],
         "boolean": true,
         "number": true,
         "string": true,
@@ -80,7 +80,7 @@ Object {
     "no-param-reassign": "off",
     "no-proto": "error",
     "no-redeclare": "error",
-    "no-restricted-globals": Array [
+    "no-restricted-globals": [
       "error",
       "event",
       "fdescribe",
@@ -96,9 +96,9 @@ Object {
     "no-undef-init": "error",
     "no-undefined": "off",
     "no-unmodified-loop-condition": "error",
-    "no-unused-expressions": Array [
+    "no-unused-expressions": [
       "error",
-      Object {
+      {
         "allowShortCircuit": false,
         "allowTaggedTemplates": false,
         "allowTernary": false,
@@ -115,9 +115,9 @@ Object {
     "no-warning-comments": "warn",
     "prefer-const": "error",
     "prefer-named-capture-group": "off",
-    "prefer-promise-reject-errors": Array [
+    "prefer-promise-reject-errors": [
       "error",
-      Object {
+      {
         "allowEmptyReject": true,
       },
     ],
@@ -130,7 +130,7 @@ Object {
     "strict": "error",
     "symbol-description": "error",
     "vars-on-top": "error",
-    "yoda": Array [
+    "yoda": [
       "error",
       "never",
     ],

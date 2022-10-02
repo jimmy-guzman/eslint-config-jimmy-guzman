@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`typescript should export typescript rules config 1`] = `
-Object {
-  "extends": Array [
+{
+  "extends": [
     "prettier",
   ],
-  "overrides": Array [
-    Object {
-      "files": Array [
+  "overrides": [
+    {
+      "files": [
         "**/*.ts?(x)",
       ],
       "parser": "@typescript-eslint/parser",
-      "plugins": Array [
+      "plugins": [
         "@typescript-eslint",
       ],
-      "rules": Object {
+      "rules": {
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/array-type": "off",
         "@typescript-eslint/await-thenable": "error",
@@ -22,28 +22,28 @@ Object {
         "@typescript-eslint/ban-tslint-comment": "error",
         "@typescript-eslint/ban-types": "error",
         "@typescript-eslint/class-literal-property-style": "off",
-        "@typescript-eslint/consistent-generic-constructors": Array [
+        "@typescript-eslint/consistent-generic-constructors": [
           "error",
           "constructor",
         ],
-        "@typescript-eslint/consistent-indexed-object-style": Array [
+        "@typescript-eslint/consistent-indexed-object-style": [
           "error",
           "record",
         ],
         "@typescript-eslint/consistent-type-assertions": "off",
-        "@typescript-eslint/consistent-type-definitions": Array [
+        "@typescript-eslint/consistent-type-definitions": [
           "error",
           "interface",
         ],
-        "@typescript-eslint/consistent-type-exports": Array [
+        "@typescript-eslint/consistent-type-exports": [
           "error",
-          Object {
+          {
             "fixMixedExportsWithInlineTypeSpecifier": true,
           },
         ],
-        "@typescript-eslint/consistent-type-imports": Array [
+        "@typescript-eslint/consistent-type-imports": [
           "error",
-          Object {
+          {
             "disallowTypeAnnotations": true,
             "prefer": "type-imports",
           },
@@ -55,11 +55,11 @@ Object {
         "@typescript-eslint/explicit-module-boundary-types": "error",
         "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/lines-between-class-members": "off",
-        "@typescript-eslint/member-ordering": Array [
+        "@typescript-eslint/member-ordering": [
           "error",
-          Object {
-            "default": Object {
-              "memberTypes": Array [
+          {
+            "default": {
+              "memberTypes": [
                 "signature",
                 "method",
                 "constructor",
@@ -69,31 +69,31 @@ Object {
             },
           },
         ],
-        "@typescript-eslint/method-signature-style": Array [
+        "@typescript-eslint/method-signature-style": [
           "error",
           "property",
         ],
-        "@typescript-eslint/naming-convention": Array [
+        "@typescript-eslint/naming-convention": [
           "error",
-          Object {
-            "format": Array [
+          {
+            "format": [
               "camelCase",
             ],
             "selector": "default",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "camelCase",
               "PascalCase",
               "UPPER_CASE",
             ],
             "selector": "variable",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "PascalCase",
             ],
-            "prefix": Array [
+            "prefix": [
               "is",
               "should",
               "has",
@@ -102,70 +102,70 @@ Object {
               "will",
             ],
             "selector": "variable",
-            "types": Array [
+            "types": [
               "boolean",
             ],
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "camelCase",
               "PascalCase",
             ],
             "selector": "function",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "camelCase",
             ],
             "leadingUnderscore": "allow",
             "selector": "parameter",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "PascalCase",
             ],
             "selector": "typeLike",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "PascalCase",
               "UPPER_CASE",
             ],
             "selector": "enum",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "PascalCase",
               "UPPER_CASE",
             ],
             "selector": "enumMember",
           },
-          Object {
-            "custom": Object {
+          {
+            "custom": {
               "match": false,
               "regex": "^I[A-Z]",
             },
-            "format": Array [
+            "format": [
               "PascalCase",
             ],
             "selector": "interface",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "camelCase",
             ],
             "leadingUnderscore": "require",
-            "modifiers": Array [
+            "modifiers": [
               "private",
             ],
             "selector": "memberLike",
           },
-          Object {
+          {
             "format": null,
             "selector": "property",
           },
-          Object {
-            "format": Array [
+          {
+            "format": [
               "camelCase",
               "PascalCase",
             ],
@@ -175,9 +175,9 @@ Object {
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "warn",
         "@typescript-eslint/no-confusing-non-null-assertion": "off",
-        "@typescript-eslint/no-confusing-void-expression": Array [
+        "@typescript-eslint/no-confusing-void-expression": [
           "error",
-          Object {
+          {
             "ignoreArrowShorthand": true,
             "ignoreVoidOperator": false,
           },
@@ -216,9 +216,9 @@ Object {
         "@typescript-eslint/no-restricted-imports": "off",
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-this-alias": "error",
-        "@typescript-eslint/no-throw-literal": Array [
+        "@typescript-eslint/no-throw-literal": [
           "error",
-          Object {
+          {
             "allowThrowingAny": true,
             "allowThrowingUnknown": true,
           },
@@ -237,7 +237,7 @@ Object {
         "@typescript-eslint/no-unsafe-return": "off",
         "@typescript-eslint/no-unused-expressions": "error",
         "@typescript-eslint/no-unused-vars": "warn",
-        "@typescript-eslint/no-use-before-define": Array [
+        "@typescript-eslint/no-use-before-define": [
           "error",
           "nofunc",
         ],
@@ -309,9 +309,9 @@ Object {
         "require-await": "off",
         "valid-typeof": "off",
       },
-      "settings": Object {
-        "import/parsers": Object {
-          "@typescript-eslint/parser": Array [
+      "settings": {
+        "import/parsers": {
+          "@typescript-eslint/parser": [
             ".ts",
             ".tsx",
             ".d.ts",

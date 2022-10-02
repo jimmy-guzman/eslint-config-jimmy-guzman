@@ -1,29 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`imports should export imports rules config 1`] = `
-Object {
-  "overrides": Array [
-    Object {
-      "files": Array [
+{
+  "overrides": [
+    {
+      "files": [
         "**/?(*.)+(stories).[jt]s?(x)",
       ],
-      "rules": Object {
+      "rules": {
         "import/exports-last": "off",
       },
     },
   ],
-  "plugins": Array [
+  "plugins": [
     "import",
   ],
-  "rules": Object {
+  "rules": {
     "import/default": "error",
     "import/dynamic-import-chunkname": "off",
     "import/export": "error",
     "import/exports-last": "error",
-    "import/extensions": Array [
+    "import/extensions": [
       "error",
       "ignorePackages",
-      Object {
+      {
         "js": "never",
         "jsx": "never",
         "mjs": "never",
@@ -37,9 +37,9 @@ Object {
     "import/named": "error",
     "import/namespace": "error",
     "import/newline-after-import": "error",
-    "import/no-absolute-path": Array [
+    "import/no-absolute-path": [
       "error",
-      Object {
+      {
         "amd": false,
         "commonjs": true,
         "esmodule": true,
@@ -68,9 +68,9 @@ Object {
     "import/no-restricted-paths": "off",
     "import/no-self-import": "error",
     "import/no-unassigned-import": "off",
-    "import/no-unresolved": Array [
+    "import/no-unresolved": [
       "error",
-      Object {
+      {
         "caseSensitive": true,
         "commonjs": true,
       },
@@ -78,19 +78,19 @@ Object {
     "import/no-unused-modules": "off",
     "import/no-useless-path-segments": "error",
     "import/no-webpack-loader-syntax": "error",
-    "import/order": Array [
+    "import/order": [
       "error",
-      Object {
-        "alphabetize": Object {
+      {
+        "alphabetize": {
           "caseInsensitive": true,
           "order": "asc",
         },
-        "groups": Array [
+        "groups": [
           "builtin",
           "external",
           "type",
           "internal",
-          Array [
+          [
             "parent",
             "sibling",
             "index",
@@ -102,24 +102,24 @@ Object {
     "import/prefer-default-export": "off",
     "import/unambiguous": "off",
   },
-  "settings": Object {
-    "import/extensions": Array [
+  "settings": {
+    "import/extensions": [
       ".js",
       ".mjs",
       ".jsx",
       ".ts",
       ".tsx",
     ],
-    "import/external-module-folders": Array [
+    "import/external-module-folders": [
       "node_modules",
       "node_modules/@types",
     ],
-    "import/ignore": Array [
+    "import/ignore": [
       "node_modules",
     ],
-    "import/resolver": Object {
-      "node": Object {
-        "extensions": Array [
+    "import/resolver": {
+      "node": {
+        "extensions": [
           ".js",
           ".jsx",
           ".ts",
