@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`react should export react rules config 1`] = `
-Object {
-  "extends": Array [
+{
+  "extends": [
     "prettier",
   ],
-  "plugins": Array [
+  "plugins": [
     "react",
     "react-hooks",
     "jsx-a11y",
   ],
-  "rules": Object {
-    "class-methods-use-this": Array [
+  "rules": {
+    "class-methods-use-this": [
       "error",
-      Object {
-        "exceptMethods": Array [
+      {
+        "exceptMethods": [
           "render",
           "getInitialState",
           "getDefaultProps",
@@ -44,10 +44,10 @@ Object {
     "jsx-a11y/aria-unsupported-elements": "error",
     "jsx-a11y/autocomplete-valid": "error",
     "jsx-a11y/click-events-have-key-events": "error",
-    "jsx-a11y/control-has-associated-label": Array [
+    "jsx-a11y/control-has-associated-label": [
       "off",
-      Object {
-        "ignoreElements": Array [
+      {
+        "ignoreElements": [
           "audio",
           "canvas",
           "embed",
@@ -56,7 +56,7 @@ Object {
           "tr",
           "video",
         ],
-        "ignoreRoles": Array [
+        "ignoreRoles": [
           "grid",
           "listbox",
           "menu",
@@ -68,7 +68,7 @@ Object {
           "tree",
           "treegrid",
         ],
-        "includeRoles": Array [
+        "includeRoles": [
           "alert",
           "dialog",
         ],
@@ -78,10 +78,10 @@ Object {
     "jsx-a11y/html-has-lang": "error",
     "jsx-a11y/iframe-has-title": "error",
     "jsx-a11y/img-redundant-alt": "error",
-    "jsx-a11y/interactive-supports-focus": Array [
+    "jsx-a11y/interactive-supports-focus": [
       "error",
-      Object {
-        "tabbable": Array [
+      {
+        "tabbable": [
           "button",
           "checkbox",
           "link",
@@ -103,18 +103,18 @@ Object {
     "jsx-a11y/no-autofocus": "error",
     "jsx-a11y/no-distracting-elements": "error",
     "jsx-a11y/no-interactive-element-to-noninteractive-role": "error",
-    "jsx-a11y/no-noninteractive-element-interactions": Array [
+    "jsx-a11y/no-noninteractive-element-interactions": [
       "error",
-      Object {
-        "body": Array [
+      {
+        "body": [
           "onError",
           "onLoad",
         ],
-        "iframe": Array [
+        "iframe": [
           "onError",
           "onLoad",
         ],
-        "img": Array [
+        "img": [
           "onError",
           "onLoad",
         ],
@@ -130,9 +130,9 @@ Object {
     "jsx-a11y/tabindex-no-positive": "error",
     "react-hooks/exhaustive-deps": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react/boolean-prop-naming": Array [
+    "react/boolean-prop-naming": [
       "error",
-      Object {
+      {
         "rule": "^(is|has|should|can|did|will)[A-Z]([A-Za-z0-9]?)+",
       },
     ],
@@ -144,12 +144,12 @@ Object {
     "react/forbid-dom-props": "off",
     "react/forbid-elements": "off",
     "react/forbid-foreign-prop-types": "off",
-    "react/forbid-prop-types": Array [
+    "react/forbid-prop-types": [
       "error",
-      Object {
+      {
         "checkChildContextTypes": true,
         "checkContextTypes": true,
-        "forbid": Array [
+        "forbid": [
           "any",
           "array",
           "object",
@@ -157,13 +157,13 @@ Object {
       },
     ],
     "react/function-component-definition": "off",
-    "react/jsx-boolean-value": Array [
+    "react/jsx-boolean-value": [
       "error",
       "never",
     ],
     "react/jsx-curly-brace-presence": "off",
     "react/jsx-filename-extension": "off",
-    "react/jsx-fragments": Array [
+    "react/jsx-fragments": [
       "error",
       "syntax",
     ],
@@ -173,9 +173,9 @@ Object {
     "react/jsx-no-bind": "off",
     "react/jsx-no-comment-textnodes": "warn",
     "react/jsx-no-constructed-context-values": "error",
-    "react/jsx-no-duplicate-props": Array [
+    "react/jsx-no-duplicate-props": [
       "error",
-      Object {
+      {
         "ignoreCase": true,
       },
     ],
@@ -238,8 +238,8 @@ Object {
     "react/style-prop-object": "error",
     "react/void-dom-elements-no-children": "error",
   },
-  "settings": Object {
-    "react": Object {
+  "settings": {
+    "react": {
       "version": "detect",
     },
   },

@@ -1,71 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`style should export style rules config 1`] = `
-Object {
-  "extends": Array [
+{
+  "extends": [
     "prettier",
   ],
-  "rules": Object {
+  "rules": {
     "arrow-body-style": "off",
     "camelcase": "off",
     "capitalized-comments": "off",
     "consistent-this": "off",
     "func-name-matching": "error",
-    "func-names": Array [
+    "func-names": [
       "error",
       "as-needed",
     ],
     "func-style": "off",
     "id-denylist": "off",
-    "id-length": Array [
+    "id-length": [
       "error",
-      Object {
+      {
         "min": 2,
       },
     ],
-    "id-match": Array [
+    "id-match": [
       "error",
-      "^\\\\$?(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*\\\\$?$",
+      "^\\$?(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*\\$?$",
     ],
     "init-declarations": "off",
     "line-comment-position": "off",
     "lines-around-comment": "off",
     "lines-between-class-members": "error",
-    "max-depth": Array [
+    "max-depth": [
       "error",
       4,
     ],
-    "max-lines": Array [
+    "max-lines": [
       "error",
-      Object {
+      {
         "max": 500,
         "skipBlankLines": true,
         "skipComments": true,
       },
     ],
-    "max-lines-per-function": Array [
+    "max-lines-per-function": [
       "error",
-      Object {
+      {
         "max": 50,
         "skipBlankLines": true,
         "skipComments": true,
       },
     ],
-    "max-nested-callbacks": Array [
+    "max-nested-callbacks": [
       "error",
       7,
     ],
-    "max-params": Array [
+    "max-params": [
       "error",
       3,
     ],
-    "max-statements": Array [
+    "max-statements": [
       "error",
       12,
     ],
-    "max-statements-per-line": Array [
+    "max-statements-per-line": [
       "error",
-      Object {
+      {
         "max": 1,
       },
     ],
@@ -91,25 +91,25 @@ Object {
     "object-shorthand": "error",
     "one-var": "off",
     "operator-assignment": "off",
-    "padding-line-between-statements": Array [
+    "padding-line-between-statements": [
       "error",
-      Object {
+      {
         "blankLine": "always",
         "next": "*",
-        "prev": Array [
+        "prev": [
           "const",
           "let",
           "var",
         ],
       },
-      Object {
+      {
         "blankLine": "any",
-        "next": Array [
+        "next": [
           "const",
           "let",
           "var",
         ],
-        "prev": Array [
+        "prev": [
           "const",
           "let",
           "var",
@@ -117,19 +117,19 @@ Object {
       },
     ],
     "prefer-arrow-callback": "error",
-    "prefer-destructuring": Array [
+    "prefer-destructuring": [
       "error",
-      Object {
-        "AssignmentExpression": Object {
+      {
+        "AssignmentExpression": {
           "array": true,
           "object": true,
         },
-        "VariableDeclarator": Object {
+        "VariableDeclarator": {
           "array": true,
           "object": true,
         },
       },
-      Object {
+      {
         "enforceForRenamedProperties": true,
       },
     ],
@@ -139,10 +139,10 @@ Object {
     "prefer-object-spread": "error",
     "prefer-spread": "error",
     "sort-imports": "off",
-    "sort-keys": Array [
+    "sort-keys": [
       "error",
       "asc",
-      Object {
+      {
         "caseSensitive": true,
         "minKeys": 5,
         "natural": false,

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`errors should export errors rules config 1`] = `
-Object {
-  "rules": Object {
+{
+  "rules": {
     "constructor-super": "error",
     "for-direction": "error",
     "getter-return": "error",
@@ -63,7 +63,7 @@ Object {
     "no-unused-labels": "error",
     "no-unused-private-class-members": "error",
     "no-unused-vars": "error",
-    "no-use-before-define": Array [
+    "no-use-before-define": [
       "error",
       "nofunc",
     ],
