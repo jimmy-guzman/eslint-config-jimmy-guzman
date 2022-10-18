@@ -84,7 +84,7 @@
     "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/jest": "29.1.1",
-    "@types/node": "16.11.62",
+    "@types/node": "16.11.68",
     "commitlint": "17.1.2",
     "esbuild": "0.15.10",
     "eslint": "8.24.0",
@@ -109,7 +109,7 @@
     "node": ">= 14"
   },
   "volta": {
-    "node": "16.17.1"
+    "node": "16.18.0"
   },
   "files": [
     "dist"
