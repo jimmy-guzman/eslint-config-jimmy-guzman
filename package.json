@@ -85,7 +85,7 @@
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/jest": "29.1.1",
     "@types/node": "16.11.68",
-    "commitlint": "17.1.2",
+    "commitlint": "17.3.0",
     "esbuild": "0.15.10",
     "eslint": "8.24.0",
     "eslint-find-rules": "4.1.0",
