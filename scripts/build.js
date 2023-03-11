@@ -1,4 +1,4 @@
-const { esbuild } = require('./esbuild')
+const esbuild = require('./esbuild')
 
 const ROOT_DIR = './src'
 
