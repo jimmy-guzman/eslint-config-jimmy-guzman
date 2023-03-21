@@ -1,3 +1,15 @@
+# [9.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v8.0.0...v9.0.0) (2023-03-21)
+
+
+### Features
+
+* **ts:** ✨ enable a few TypeScript rules & support TypeScript v5 ([0a59ea3](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/0a59ea36e51eb2b6ee7cf92944162cef191b1baa))
+
+
+### BREAKING CHANGES
+
+* **ts:** 💥 new enabled rules can potentially require code changes
+
 # [8.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v7.0.0...v8.0.0) (2022-10-02)
 
 
