@@ -21,7 +21,7 @@ rules:
         '*',
         deps,
         base,
-        typescript,
+        ts,
         jest,
         'imports',
         'style',
