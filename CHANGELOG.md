@@ -1,3 +1,10 @@
+## [9.0.1](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v9.0.0...v9.0.1) (2023-03-21)
+
+
+### Bug Fixes
+
+* 🐛 increase TypeScript peer dependency range ([5a41baa](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/5a41baa7a70043741e8d427a1a9ebf42362ee7e3))
+
 # [9.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v8.0.0...v9.0.0) (2023-03-21)
 
 

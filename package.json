@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jimmy-guzman",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "description": "An opinionated ESLint configuration that targets typescript, javascript, react, jest and testing-library",
   "main": "dist/index.js",
   "exports": {
