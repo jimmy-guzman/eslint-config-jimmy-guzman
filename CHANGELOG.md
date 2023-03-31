@@ -1,3 +1,10 @@
+# [9.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v9.0.1...v9.1.0) (2023-03-31)
+
+
+### Features
+
+* **ts:** ✨ add support for path aliases ([4454351](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/4454351889eb744a65f4d8a72f28b05b69a66dc8))
+
 ## [9.0.1](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v9.0.0...v9.0.1) (2023-03-21)
 
 
