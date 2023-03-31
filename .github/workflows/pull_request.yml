@@ -15,9 +15,9 @@ jobs:
           fetch-depth: 0
 
       - name: setup pnpm
-        uses: pnpm/action-setup@v2.2.4
+        uses: pnpm/action-setup@v2
         with:
-          version: 6.21.1
+          version: 7
 
       - name: setup cache ${{ matrix.node }}
         uses: actions/setup-node@v3
@@ -69,7 +69,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: streetsidesoftware/cspell-action@v2.23.0
+      - uses: streetsidesoftware/cspell-action@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           inline: error
