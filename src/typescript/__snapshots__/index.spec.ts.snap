@@ -324,6 +324,11 @@ exports[`typescript > should export typescript rules config 1`] = `
             ".d.ts",
           ],
         },
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true,
+          },
+        },
       },
     },
   ],
