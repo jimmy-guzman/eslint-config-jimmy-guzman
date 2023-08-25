@@ -9,7 +9,7 @@ const defaultOptions = {
   minifyWhitespace: false,
   platform: 'node',
   sourcemap: false,
-  target: 'node14',
+  target: 'node16',
 }
 
 module.exports = async ({
