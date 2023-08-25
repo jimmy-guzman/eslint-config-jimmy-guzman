@@ -13,7 +13,8 @@ export const rules: EslintRules = {
   '@typescript-eslint/ban-tslint-comment': 'error',
   '@typescript-eslint/ban-types': 'error',
   '@typescript-eslint/block-spacing': 'off',
-  '@typescript-eslint/class-literal-property-style': 'off', // revisit
+  '@typescript-eslint/class-literal-property-style': 'off', // revisit,
+  '@typescript-eslint/class-methods-use-this': 'off', // revisit
   '@typescript-eslint/consistent-generic-constructors': [
     'error',
     'constructor',
@@ -58,7 +59,7 @@ export const rules: EslintRules = {
   ],
   '@typescript-eslint/no-dupe-class-members': 'off',
   '@typescript-eslint/no-duplicate-enum-values': 'error',
-  '@typescript-eslint/no-duplicate-imports': 'error',
+  '@typescript-eslint/no-duplicate-type-constituents': 'error',
   '@typescript-eslint/no-dynamic-delete': 'error', // fixable
   '@typescript-eslint/no-empty-function': 'error',
   '@typescript-eslint/no-empty-interface': 'error',
@@ -68,7 +69,6 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-extraneous-class': 'error',
   '@typescript-eslint/no-floating-promises': 'off', // revisit
   '@typescript-eslint/no-for-in-array': 'error',
-  '@typescript-eslint/no-implicit-any-catch': 'error', // fixable
   '@typescript-eslint/no-implied-eval': 'error',
   '@typescript-eslint/no-import-type-side-effects': 'error',
   '@typescript-eslint/no-inferrable-types': 'error',
@@ -85,7 +85,6 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
   '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
   '@typescript-eslint/no-non-null-assertion': 'warn',
-  '@typescript-eslint/no-parameter-properties': 'error',
   '@typescript-eslint/no-redeclare': 'off',
   '@typescript-eslint/no-redundant-type-constituents': 'error',
   '@typescript-eslint/no-require-imports': 'off',
@@ -110,6 +109,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-unsafe-assignment': 'off', // revisit
   '@typescript-eslint/no-unsafe-call': 'off', // revisit
   '@typescript-eslint/no-unsafe-declaration-merging': 'error',
+  '@typescript-eslint/no-unsafe-enum-comparison': 'error',
   '@typescript-eslint/no-unsafe-member-access': 'off', // revisit
   '@typescript-eslint/no-unsafe-return': 'off', // revisit
   '@typescript-eslint/no-unused-expressions': 'error',
@@ -144,12 +144,12 @@ export const rules: EslintRules = {
   '@typescript-eslint/restrict-template-expressions': 'off',
   '@typescript-eslint/return-await': 'error', // fixable
   '@typescript-eslint/sort-type-constituents': 'error',
-  '@typescript-eslint/sort-type-union-intersection-members': 'error',
   '@typescript-eslint/space-before-blocks': 'off',
   '@typescript-eslint/strict-boolean-expressions': 'off', // revisit
   '@typescript-eslint/switch-exhaustiveness-check': 'error',
   '@typescript-eslint/triple-slash-reference': 'error',
   '@typescript-eslint/typedef': 'off', // revisit
   '@typescript-eslint/unbound-method': 'error',
+
   '@typescript-eslint/unified-signatures': 'warn',
 }
