@@ -1,3 +1,19 @@
+# [10.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v9.1.0...v10.0.0) (2023-08-25)
+
+
+### Features
+
+* ✨ add support for node v20, drop support for node v14 ([77253c7](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/77253c7cfe39650f61eb05949cb91e15f95d0dd3))
+* **deps:** ✨ bump `eslint-config-prettier` to v9.0.0 ([79cd191](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/79cd1916363321f1bcfb41b52a9a5916073adf67))
+* **ts:** ✨ enable `no-duplicate-type-constituents` rule ([4469c8c](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/4469c8c08f0e97ce42c6dc45887dec6083c0b36e))
+* **vitest:** ✨ introducing `vitest` support ([d0dc355](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/d0dc355d8a9d27c07fc4c4dcddb2f875864e6820))
+
+
+### BREAKING CHANGES
+
+* 💥 node v14 is no longer supported
+* **ts:** 💥 new enabled rules can potentially require code changes
+
 # [9.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v9.0.1...v9.1.0) (2023-03-31)
 
 
