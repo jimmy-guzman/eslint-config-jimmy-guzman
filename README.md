@@ -7,7 +7,7 @@
 
 # eslint-config-jimmy-guzman
 
-> An opinionated ESLint configuration that targets typescript, javascript, react and jest and testing-library
+> An opinionated ESLint configuration that targets typescript, javascript, react, jest vitest and testing-library
 
 # Table of Contents
 
@@ -36,12 +36,13 @@ _To easily install everything you can leverage [`install-peerdeps`][install-peer
 
 Add `extends: 'jimmy-guzman'` to your `.eslintrc` to get all the rules that enforce code style, enforce best practices and prevent errors.
 
-This package also includes rules for `jest`, `typescript` and `testing-library` that can be used such as:
+This package also includes rules for `jest`, `vitest`, `react`, `typescript` and `testing-library` that can be used such as:
 
 | rules           | configuration                                                                     | notes                    |
 | --------------- | --------------------------------------------------------------------------------- | ------------------------ |
 | base            | `extends: 'jimmy-guzman'`                                                         |                          |
 | jest            | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`                                  |                          |
+| vitest          | `extends: ['jimmy-guzman', 'jimmy-guzman/vitest']`                                |                          |
 | typescript      | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']`                            | [here](#typescript)      |
 | react           | `extends: ['jimmy-guzman', 'jimmy-guzman/react']`                                 | [here](#react)           |
 | testing-library | `extends: ['jimmy-guzman', 'jimmy-guzman/react', 'jimmy-guzman/testing-library']` | [here](#testing-library) |

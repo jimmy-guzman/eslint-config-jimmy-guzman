@@ -27,5 +27,6 @@ rules:
         'style',
         'react',
         'testing-library',
+        vitest,
       ],
     ]
