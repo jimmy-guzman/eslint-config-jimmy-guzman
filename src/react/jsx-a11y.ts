@@ -2,6 +2,7 @@ import type { EslintRules } from '../models'
 
 export const jsxA11yRules: EslintRules = {
   'jsx-a11y/alt-text': 'error',
+  'jsx-a11y/anchor-ambiguous-text': 'off', // revisit
   'jsx-a11y/anchor-has-content': 'error',
   'jsx-a11y/anchor-is-valid': 'error',
   'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
@@ -64,6 +65,7 @@ export const jsxA11yRules: EslintRules = {
   'jsx-a11y/media-has-caption': 'error',
   'jsx-a11y/mouse-events-have-key-events': 'error',
   'jsx-a11y/no-access-key': 'error',
+  'jsx-a11y/no-aria-hidden-on-focusable': 'off',
   'jsx-a11y/no-autofocus': 'error',
   'jsx-a11y/no-distracting-elements': 'error',
   'jsx-a11y/no-interactive-element-to-noninteractive-role': 'error',
@@ -79,6 +81,7 @@ export const jsxA11yRules: EslintRules = {
   'jsx-a11y/no-noninteractive-tabindex': 'error',
   'jsx-a11y/no-redundant-roles': 'error',
   'jsx-a11y/no-static-element-interactions': 'error',
+  'jsx-a11y/prefer-tag-over-role': 'off', // revisit
   'jsx-a11y/role-has-required-aria-props': 'error',
   'jsx-a11y/role-supports-aria-props': 'error',
   'jsx-a11y/scope': 'error',
