@@ -1,3 +1,12 @@
+# [10.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v10.0.0...v10.1.0) (2023-08-25)
+
+
+### Features
+
+* **imports:** ✨ bump `eslint-plugin-import` to v2.28.1 ([92be306](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/92be306df95daa90b6f22ecb06e4f4e2e464399e))
+* **react:** ✨ bump `eslint-plugin-jsx-a11y` to v6.7.1 ([f9c6aab](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/f9c6aabcb831851f109521d35a5ee788f058b674))
+* **react:** ✨ bump `eslint-plugin-react` to v7.28.0 ([286619c](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/286619c34f32de7a2f445e5782b34d812fc576a6))
+
 # [10.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v9.1.0...v10.0.0) (2023-08-25)
 
 
