@@ -13,6 +13,7 @@ const entryPoints = [
   `${ROOT_DIR}/typescript`,
   `${ROOT_DIR}/react`,
   `${ROOT_DIR}/testing-library`,
+  `${ROOT_DIR}/vitest`,
 ]
 
 esbuild({ entryPoints })

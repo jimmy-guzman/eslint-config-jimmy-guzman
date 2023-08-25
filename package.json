@@ -8,7 +8,8 @@
     "./typescript": "./dist/typescript.js",
     "./jest": "./dist/jest.js",
     "./react": "./dist/react.js",
-    "./testing-library": "./dist/testing-library.js"
+    "./testing-library": "./dist/testing-library.js",
+    "./vitest": "./dist/vitest.js"
   },
   "repository": {
     "type": "git",
@@ -47,6 +48,7 @@
     "find-new-rules:ts": "eslint-find-rules --ext ts --no-core --unused dist/typescript.js",
     "find-new-rules:react": "eslint-find-rules --no-core --unused dist/react.js",
     "find-new-rules:testing-library": "eslint-find-rules --ext .spec.ts --no-core --unused dist/testing-library.js",
+    "find-new-rules:vitest": "eslint-find-rules --ext .spec.ts --no-core --unused dist/vitest.js",
     "commit": "gitzy",
     "prepare": "is-ci || husky install"
   },
