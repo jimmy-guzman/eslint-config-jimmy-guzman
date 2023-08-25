@@ -16,6 +16,7 @@ exports[`imports > should export imports rules config 1`] = `
     "import",
   ],
   "rules": {
+    "import/consistent-type-specifier-style": "off",
     "import/default": "error",
     "import/dynamic-import-chunkname": "off",
     "import/export": "error",
@@ -53,6 +54,7 @@ exports[`imports > should export imports rules config 1`] = `
     "import/no-deprecated": "warn",
     "import/no-duplicates": "off",
     "import/no-dynamic-require": "off",
+    "import/no-empty-named-blocks": "off",
     "import/no-extraneous-dependencies": "error",
     "import/no-import-module-exports": "error",
     "import/no-internal-modules": "off",
