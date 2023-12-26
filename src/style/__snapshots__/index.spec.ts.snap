@@ -118,22 +118,7 @@ exports[`style > should export style rules config 1`] = `
       },
     ],
     "prefer-arrow-callback": "error",
-    "prefer-destructuring": [
-      "error",
-      {
-        "AssignmentExpression": {
-          "array": true,
-          "object": true,
-        },
-        "VariableDeclarator": {
-          "array": true,
-          "object": true,
-        },
-      },
-      {
-        "enforceForRenamedProperties": true,
-      },
-    ],
+    "prefer-destructuring": "off",
     "prefer-exponentiation-operator": "warn",
     "prefer-numeric-literals": "off",
     "prefer-object-has-own": "off",

@@ -7,6 +7,7 @@ export const importDuplicates: EslintRules = {
 export const eslintOverrides: EslintRules = {
   'constructor-super': 'off', // ts(2335) & ts(2377)
   'getter-return': 'off', // ts(2378)
+  'max-params': 'off',
   'no-array-constructor': 'off',
   'no-const-assign': 'off', // ts(2588)
   'no-dupe-args': 'off', // ts(2300)

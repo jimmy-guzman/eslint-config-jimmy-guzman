@@ -63,24 +63,7 @@ export const rules: EslintRules = {
     },
   ],
   'prefer-arrow-callback': 'error',
-  'prefer-destructuring': [
-    'error',
-    {
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      VariableDeclarator: {
-        array: true,
-        object: true,
-      },
-      // eslint-disable-next-line @typescript-eslint/naming-convention
-      AssignmentExpression: {
-        array: true,
-        object: true,
-      },
-    },
-    {
-      enforceForRenamedProperties: true,
-    },
-  ],
+  'prefer-destructuring': 'off',
   'prefer-exponentiation-operator': 'warn',
   'prefer-numeric-literals': 'off', // revisit
   'prefer-object-has-own': 'off', // revisit

@@ -39,6 +39,7 @@ export const rules: EslintRules = {
   '@typescript-eslint/key-spacing': 'off',
   '@typescript-eslint/lines-around-comment': 'off',
   '@typescript-eslint/lines-between-class-members': 'off', // revisit,
+  '@typescript-eslint/max-params': ['error', { max: 3 }],
   '@typescript-eslint/member-ordering': [
     'error',
     {
@@ -110,19 +111,22 @@ export const rules: EslintRules = {
   '@typescript-eslint/no-unsafe-call': 'off', // revisit
   '@typescript-eslint/no-unsafe-declaration-merging': 'error',
   '@typescript-eslint/no-unsafe-enum-comparison': 'error',
-  '@typescript-eslint/no-unsafe-member-access': 'off', // revisit
+  '@typescript-eslint/no-unsafe-member-access': 'off', // revisit,
   '@typescript-eslint/no-unsafe-return': 'off', // revisit
+  '@typescript-eslint/no-unsafe-unary-minus': 'error',
   '@typescript-eslint/no-unused-expressions': 'error',
   '@typescript-eslint/no-unused-vars': 'warn',
   '@typescript-eslint/no-use-before-define': ['error', 'nofunc'],
   '@typescript-eslint/no-useless-constructor': 'off',
   '@typescript-eslint/no-useless-empty-export': 'error',
+  '@typescript-eslint/no-useless-template-literals': 'error',
   '@typescript-eslint/no-var-requires': 'error',
   '@typescript-eslint/non-nullable-type-assertion-style': 'off',
   '@typescript-eslint/padding-line-between-statements': 'off',
   '@typescript-eslint/parameter-properties': 'off', // revisit
   '@typescript-eslint/prefer-as-const': 'error',
-  '@typescript-eslint/prefer-enum-initializers': 'error',
+  '@typescript-eslint/prefer-destructuring': 'error',
+  '@typescript-eslint/prefer-enum-initializers': 'off',
   '@typescript-eslint/prefer-for-of': 'error',
   '@typescript-eslint/prefer-function-type': 'error', // fixable
   '@typescript-eslint/prefer-includes': 'error', // fixable
@@ -150,6 +154,5 @@ export const rules: EslintRules = {
   '@typescript-eslint/triple-slash-reference': 'error',
   '@typescript-eslint/typedef': 'off', // revisit
   '@typescript-eslint/unbound-method': 'error',
-
   '@typescript-eslint/unified-signatures': 'warn',
 }

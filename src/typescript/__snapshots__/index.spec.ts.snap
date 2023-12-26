@@ -59,6 +59,12 @@ exports[`typescript > should export typescript rules config 1`] = `
         "@typescript-eslint/key-spacing": "off",
         "@typescript-eslint/lines-around-comment": "off",
         "@typescript-eslint/lines-between-class-members": "off",
+        "@typescript-eslint/max-params": [
+          "error",
+          {
+            "max": 3,
+          },
+        ],
         "@typescript-eslint/member-ordering": [
           "error",
           {
@@ -241,6 +247,7 @@ exports[`typescript > should export typescript rules config 1`] = `
         "@typescript-eslint/no-unsafe-enum-comparison": "error",
         "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-unary-minus": "error",
         "@typescript-eslint/no-unused-expressions": "error",
         "@typescript-eslint/no-unused-vars": "warn",
         "@typescript-eslint/no-use-before-define": [
@@ -249,12 +256,14 @@ exports[`typescript > should export typescript rules config 1`] = `
         ],
         "@typescript-eslint/no-useless-constructor": "off",
         "@typescript-eslint/no-useless-empty-export": "error",
+        "@typescript-eslint/no-useless-template-literals": "error",
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/non-nullable-type-assertion-style": "off",
         "@typescript-eslint/padding-line-between-statements": "off",
         "@typescript-eslint/parameter-properties": "off",
         "@typescript-eslint/prefer-as-const": "error",
-        "@typescript-eslint/prefer-enum-initializers": "error",
+        "@typescript-eslint/prefer-destructuring": "error",
+        "@typescript-eslint/prefer-enum-initializers": "off",
         "@typescript-eslint/prefer-for-of": "error",
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/prefer-includes": "error",
@@ -286,6 +295,7 @@ exports[`typescript > should export typescript rules config 1`] = `
         "constructor-super": "off",
         "getter-return": "off",
         "import/no-duplicates": "off",
+        "max-params": "off",
         "no-array-constructor": "off",
         "no-const-assign": "off",
         "no-dupe-args": "off",
