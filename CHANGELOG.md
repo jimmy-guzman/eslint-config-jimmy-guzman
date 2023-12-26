@@ -1,3 +1,15 @@
+# [11.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v10.1.0...v11.0.0) (2023-12-26)
+
+
+### Features
+
+* **ts:** ✨ add more rules and bump dependencies ([816ccf3](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/816ccf31220234a4f320af0c6734015baf820342))
+
+
+### BREAKING CHANGES
+
+* **ts:** 💥 new rules can potentially require code changes
+
 # [10.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v10.0.0...v10.1.0) (2023-08-25)
 
 
