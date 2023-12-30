@@ -89,7 +89,7 @@
     "@vitest/coverage-v8": "1.1.0",
     "commitlint": "18.4.3",
     "esbuild": "0.19.11",
-    "eslint": "8.24.0",
+    "eslint": "8.56.0",
     "eslint-find-rules": "4.1.0",
     "gitzy": "4.0.0",
     "husky": "8.0.3",
