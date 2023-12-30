@@ -1,3 +1,4 @@
+/* v8 ignore next 5 */
 type Config = 'error' | 'off' | 'warn'
 
 type Options = Record<string, unknown> | number | string
