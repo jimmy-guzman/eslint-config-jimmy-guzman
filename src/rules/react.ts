@@ -1,5 +1,4 @@
 import type { EslintRules } from '../models'
-
 import { jsxA11yRules } from './jsx-a11y'
 import { eslintOverrides } from './react-overrides'
 

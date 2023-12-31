@@ -4,7 +4,7 @@ import rules from './rules/imports'
  * https://github.com/import-js/eslint-plugin-import/tree/v2.25.2#rules
  */
 export = {
-  plugins: ['import', 'node-import'],
+  plugins: ['import', 'simple-import-sort', 'node-import'],
   rules,
   overrides: [
     {

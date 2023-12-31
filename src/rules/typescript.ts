@@ -1,5 +1,4 @@
 import type { EslintRules } from '../models'
-
 import { namingConventions } from './naming-conventions'
 import { eslintOverrides, importDuplicates } from './typescript-overrides'
 

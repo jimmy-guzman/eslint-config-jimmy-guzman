@@ -14,6 +14,7 @@ exports[`imports > should export imports rules config 1`] = `
   ],
   "plugins": [
     "import",
+    "simple-import-sort",
     "node-import",
   ],
   "rules": {
@@ -81,30 +82,12 @@ exports[`imports > should export imports rules config 1`] = `
     "import/no-unused-modules": "off",
     "import/no-useless-path-segments": "error",
     "import/no-webpack-loader-syntax": "error",
-    "import/order": [
-      "error",
-      {
-        "alphabetize": {
-          "caseInsensitive": true,
-          "order": "asc",
-        },
-        "groups": [
-          "builtin",
-          "external",
-          "type",
-          "internal",
-          [
-            "parent",
-            "sibling",
-            "index",
-          ],
-        ],
-        "newlines-between": "always",
-      },
-    ],
+    "import/order": "off",
     "import/prefer-default-export": "off",
     "import/unambiguous": "off",
     "node-import/prefer-node-protocol": "error",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
   },
   "settings": {
     "import/extensions": [
