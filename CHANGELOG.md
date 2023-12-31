@@ -1,3 +1,24 @@
+# [12.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v11.0.0...v12.0.0) (2023-12-31)
+
+
+### Features
+
+* ✨ add new `jest/no-confusing-set-timeout` rule ([46b42c9](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/46b42c9b7944281081cf006233cbd3fc54a9417f))
+* ✨ bump `eslint-plugin-testing-library` v6.2.0 ([b5a91be](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/b5a91be8a897c531fd0b1bfdec747d3f027400e7))
+* **base:** ✨ add more rules and bump `eslint` ([96aa787](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/96aa7879a411a900c80564b3802bd8021904c0d5))
+* **base:** ✨ bump `eslint-plugin-import` to v2.29.1 ([ab8ba00](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/ab8ba00c2d5743dc7ab82b5cb32b7e036ddca784))
+* **jest:** ✨ bump `eslint-plugin-jest-dom` to v5.1.0 ([909d742](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/909d742693c8f767eafbd967799e97828a3c3895))
+* **react:** ✨ bump `eslint-plugin-jsx-a11y` to v6.8.0 ([abea8c9](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/abea8c9d4e0ba6602335f19e589c9c9559e701a6))
+* **react:** ✨ bump `eslint-plugin-react-hooks` v4.6.0 ([9c590df](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/9c590dfcf5d470c3d1487376fc1678f500d17682))
+* **style:** ✨ bump `eslint-config-prettier` to v9.1.0 ([6fef5d0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/6fef5d011463064d16444608caa279e8f6958756))
+
+
+### BREAKING CHANGES
+
+* 💥 new rule might require code changes
+* **base:** 💥 new rules can potentially require code changes,
+`eslint` v8.50.0 is required
+
 # [11.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v10.1.0...v11.0.0) (2023-12-26)
 
 
