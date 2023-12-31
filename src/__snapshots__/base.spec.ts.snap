@@ -7,6 +7,14 @@ exports[`base > should export base rules config 1`] = `
     "es2021": true,
     "node": true,
   },
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    ".next/",
+    "coverage/",
+    "vite.config.ts.*.mjs",
+    "storybook-static/",
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true,

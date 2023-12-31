@@ -12,4 +12,12 @@ export = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
+  ignorePatterns: [
+    'node_modules/',
+    'dist/',
+    '.next/',
+    'coverage/',
+    'vite.config.ts.*.mjs',
+    'storybook-static/',
+  ],
 }
