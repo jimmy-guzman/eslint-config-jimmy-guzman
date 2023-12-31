@@ -57,6 +57,7 @@ export const rules: EslintRules = {
    */
   'no-misleading-character-class': 'error',
   'no-mixed-spaces-and-tabs': 'error',
+  'no-new-native-nonconstructor': 'error',
   'no-new-symbol': 'error',
   'no-nonoctal-decimal-escape': 'error',
   'no-obj-calls': 'error',
