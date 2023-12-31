@@ -15,6 +15,22 @@ exports[`base > should export base rules config 1`] = `
     "vite.config.ts.*.mjs",
     "storybook-static/",
   ],
+  "overrides": [
+    {
+      "env": {
+        "node": true,
+      },
+      "files": [
+        ".eslintrc.{js,cjs}",
+      ],
+      "parserOptions": {
+        "sourceType": "script",
+      },
+      "rules": {
+        "strict": "off",
+      },
+    },
+  ],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true,

@@ -19,5 +19,12 @@ export = {
         },
       },
     },
+    {
+      extends: ['plugin:@typescript-eslint/disable-type-checked'],
+      files: ['./**/*.{js,cjs}'],
+      rules: {
+        strict: 'off',
+      },
+    },
   ],
 }

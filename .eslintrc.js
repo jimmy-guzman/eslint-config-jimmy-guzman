@@ -6,6 +6,6 @@ module.exports = {
     './dist/testing-library',
   ],
   parserOptions: {
-    project: ['./tsconfig.eslint.json'],
+    project: ['./tsconfig.json', './tsconfig.node.json'],
   },
 }
