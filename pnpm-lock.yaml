@@ -40,9 +40,6 @@ dependencies:
     version: 6.2.0(eslint@8.56.0)(typescript@5.3.3)
 
 devDependencies:
-  '@comparto/prettier-config':
-    specifier: 1.2.0
-    version: 1.2.0
   '@semantic-release/changelog':
     specifier: 6.0.3
     version: 6.0.3(semantic-release@22.0.12)
@@ -338,10 +335,6 @@ packages:
     engines: {node: '>=v18'}
     dependencies:
       chalk: 4.1.2
-    dev: true
-
-  /@comparto/prettier-config@1.2.0:
-    resolution: {integrity: sha512-zepOINy2KrVX/6HmlFVGRyWszh78nUROYUuuFzWh00F05N/7Jq4qEwsljFDBug/UQGRvRfobCCH+Ep4C6Z2z9Q==}
     dev: true
 
   /@esbuild/aix-ppc64@0.19.11:
