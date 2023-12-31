@@ -52,7 +52,7 @@ export const rules: EslintRules = {
   'no-ternary': 'off',
   'no-underscore-dangle': 'off',
   'no-unneeded-ternary': 'error',
-  'object-shorthand': 'error',
+  'object-shorthand': ['error', 'always'],
   'one-var': 'off',
   'operator-assignment': 'off',
   'padding-line-between-statements': [

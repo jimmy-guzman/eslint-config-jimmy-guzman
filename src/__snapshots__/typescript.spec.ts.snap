@@ -342,6 +342,17 @@ exports[`typescript > should export typescript rules config 1`] = `
         },
       },
     },
+    {
+      "extends": [
+        "plugin:@typescript-eslint/disable-type-checked",
+      ],
+      "files": [
+        "./**/*.{js,cjs}",
+      ],
+      "rules": {
+        "strict": "off",
+      },
+    },
   ],
 }
 `;

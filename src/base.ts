@@ -12,6 +12,20 @@ export = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
+  overrides: [
+    {
+      files: ['.eslintrc.{js,cjs}'],
+      env: {
+        node: true,
+      },
+      parserOptions: {
+        sourceType: 'script',
+      },
+      rules: {
+        strict: 'off',
+      },
+    },
+  ],
   ignorePatterns: [
     'node_modules/',
     'dist/',
