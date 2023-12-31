@@ -62,6 +62,7 @@
     "treegrid",
     "typecheck",
     "typeof",
+    "vite",
     "vitest",
     "wagoid"
   ],
