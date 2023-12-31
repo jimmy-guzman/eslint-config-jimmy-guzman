@@ -318,6 +318,7 @@ exports[`typescript > should export typescript rules config 1`] = `
         "no-unreachable": "off",
         "no-unsafe-negation": "off",
         "no-unused-vars": "off",
+        "no-use-before-define": "off",
         "no-var": "error",
         "prefer-const": "error",
         "prefer-rest-params": "error",
