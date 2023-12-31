@@ -29,6 +29,9 @@ dependencies:
   eslint-plugin-jsx-a11y:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.56.0)
+  eslint-plugin-node-import:
+    specifier: ^1.0.4
+    version: 1.0.4(eslint@8.56.0)
   eslint-plugin-react:
     specifier: ^7.33.2
     version: 7.33.2(eslint@8.56.0)
@@ -2741,6 +2744,15 @@ packages:
       minimatch: 3.1.2
       object.entries: 1.1.7
       object.fromentries: 2.0.7
+    dev: false
+
+  /eslint-plugin-node-import@1.0.4(eslint@8.56.0):
+    resolution: {integrity: sha512-nn6EkM7+vJCDCXZiM0FDpYSekbhlk5LNoHJm9DlVSucGrsT9WoK+qOxIEm+SwoFBeH73cMHMavioDaHsu22b0Q==}
+    engines: {node: ^14.18.0 || ^16.0.0 || >= 18.0.0}
+    peerDependencies:
+      eslint: '>=7'
+    dependencies:
+      eslint: 8.56.0
     dev: false
 
   /eslint-plugin-react-hooks@4.6.0(eslint@8.56.0):

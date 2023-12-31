@@ -1,6 +1,6 @@
 import type { EslintRules } from '../models'
 
-export const rules: EslintRules = {
+const rules: EslintRules = {
   'import/consistent-type-specifier-style': 'off', // revisit
   'import/default': 'error',
   'import/dynamic-import-chunkname': 'off',
@@ -74,4 +74,7 @@ export const rules: EslintRules = {
   ],
   'import/prefer-default-export': 'off',
   'import/unambiguous': 'off',
+  'node-import/prefer-node-protocol': 'error',
 }
+
+export default rules
