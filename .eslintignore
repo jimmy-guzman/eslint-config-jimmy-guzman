@@ -1,6 +1,0 @@
-CHANGELOG.md
-!.github/
-!.vscode/
-coverage
-pnpm-lock.yaml
-dist
