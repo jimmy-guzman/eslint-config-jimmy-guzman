@@ -5,11 +5,12 @@ export const importDuplicates: EslintRules = {
 }
 
 export const eslintOverrides: EslintRules = {
-  'constructor-super': 'off', // ts(2335) & ts(2377)
+  'constructor-super': 'off', // ts(2335) & ts(2377),
+  'dot-notation': 'off',
   'getter-return': 'off', // ts(2378)
   'max-params': 'off',
   'no-array-constructor': 'off',
-  'no-const-assign': 'off', // ts(2588)
+  'no-const-assign': 'off', // ts(2588),
   'no-dupe-args': 'off', // ts(2300)
   'no-dupe-class-members': 'off', // ts(2393) & ts(2300)
   'no-dupe-keys': 'off', // ts(1117)
