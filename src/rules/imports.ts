@@ -55,26 +55,12 @@ const rules: EslintRules = {
   'import/no-unused-modules': 'off',
   'import/no-useless-path-segments': 'error',
   'import/no-webpack-loader-syntax': 'error',
-  'import/order': [
-    'error',
-    {
-      'groups': [
-        'builtin',
-        'external',
-        'type',
-        'internal',
-        ['parent', 'sibling', 'index'],
-      ],
-      'newlines-between': 'always',
-      'alphabetize': {
-        order: 'asc',
-        caseInsensitive: true,
-      },
-    },
-  ],
+  'import/order': 'off',
   'import/prefer-default-export': 'off',
   'import/unambiguous': 'off',
   'node-import/prefer-node-protocol': 'error',
+  'simple-import-sort/exports': 'error',
+  'simple-import-sort/imports': 'error',
 }
 
 export default rules
