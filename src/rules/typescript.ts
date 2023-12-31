@@ -1,5 +1,4 @@
 import type { EslintRules } from '../models'
-import { namingConventions } from './naming-conventions'
 import { eslintOverrides, importDuplicates } from './typescript-overrides'
 
 /**
@@ -36,23 +35,15 @@ export const rules: EslintRules = {
   '@typescript-eslint/dot-notation': 'error',
   '@typescript-eslint/explicit-function-return-type': 'off',
   '@typescript-eslint/explicit-member-accessibility': 'off', // revisit
-  '@typescript-eslint/explicit-module-boundary-types': 'error',
+  '@typescript-eslint/explicit-module-boundary-types': 'off',
   '@typescript-eslint/init-declarations': 'off',
   '@typescript-eslint/key-spacing': 'off',
   '@typescript-eslint/lines-around-comment': 'off',
   '@typescript-eslint/lines-between-class-members': 'off', // revisit,
   '@typescript-eslint/max-params': ['error', { max: 3 }],
-  '@typescript-eslint/member-ordering': [
-    'error',
-    {
-      default: {
-        memberTypes: ['signature', 'method', 'constructor', 'field'],
-        order: 'alphabetically',
-      },
-    },
-  ],
+  '@typescript-eslint/member-ordering': 'off',
   '@typescript-eslint/method-signature-style': ['error', 'property'], // fixable
-  '@typescript-eslint/naming-convention': ['error', ...namingConventions],
+  '@typescript-eslint/naming-convention': 'off',
   '@typescript-eslint/no-array-constructor': 'error',
   '@typescript-eslint/no-base-to-string': 'warn',
   '@typescript-eslint/no-confusing-non-null-assertion': 'off', //fixable

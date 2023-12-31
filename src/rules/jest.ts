@@ -58,7 +58,7 @@ export const rules: EslintRules = {
   'jest/prefer-expect-resolves': 'error',
   'jest/prefer-hooks-in-order': 'error',
   'jest/prefer-hooks-on-top': 'error',
-  'jest/prefer-lowercase-title': 'error',
+  'jest/prefer-lowercase-title': 'off',
   'jest/prefer-mock-promise-shorthand': 'error',
   'jest/prefer-snapshot-hint': 'error',
   'jest/prefer-spy-on': 'off',

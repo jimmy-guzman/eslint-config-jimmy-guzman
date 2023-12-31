@@ -72,11 +72,7 @@ export const rules: EslintRules = {
   'prefer-object-spread': 'error',
   'prefer-spread': 'error',
   'sort-imports': 'off',
-  'sort-keys': [
-    'error',
-    'asc',
-    { caseSensitive: true, natural: false, minKeys: 5 },
-  ],
+  'sort-keys': 'off',
   'sort-vars': 'off',
   'space-before-blocks': 'off',
   'spaced-comment': 'off',
