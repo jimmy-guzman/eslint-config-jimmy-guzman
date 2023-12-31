@@ -293,6 +293,7 @@ exports[`typescript > should export typescript rules config 1`] = `
         "@typescript-eslint/unbound-method": "error",
         "@typescript-eslint/unified-signatures": "warn",
         "constructor-super": "off",
+        "dot-notation": "off",
         "getter-return": "off",
         "import/no-duplicates": "off",
         "max-params": "off",
