@@ -12,7 +12,7 @@ export const rules: EslintRules = {
   'consistent-this': 'off',
   'func-name-matching': 'error',
   'func-names': ['error', 'as-needed'],
-  'func-style': 'off',
+  'func-style': ['error', 'expression'],
   'id-denylist': 'off', // revisit
   'id-length': ['error', { min: 2 }],
   'id-match': ['error', '^\\$?(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*\\$?$'],

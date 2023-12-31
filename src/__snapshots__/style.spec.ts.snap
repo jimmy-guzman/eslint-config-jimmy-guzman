@@ -15,7 +15,10 @@ exports[`style > should export style rules config 1`] = `
       "error",
       "as-needed",
     ],
-    "func-style": "off",
+    "func-style": [
+      "error",
+      "expression",
+    ],
     "id-denylist": "off",
     "id-length": [
       "error",
