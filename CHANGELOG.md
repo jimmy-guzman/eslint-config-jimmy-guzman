@@ -1,3 +1,10 @@
+# [12.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v12.0.0...v12.1.0) (2023-12-31)
+
+
+### Features
+
+* ✨ expose base(imports,errors,best-practices,style) rulesets ([bfdaed8](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/bfdaed83dfaea5ddc88cd14999d539884e0bfe6c))
+
 # [12.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v11.0.0...v12.0.0) (2023-12-31)
 
 
