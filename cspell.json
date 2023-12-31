@@ -37,6 +37,7 @@
     "outdir",
     "outfile",
     "peerdeps",
+    "pkgroll",
     "plusplus",
     "pnpm",
     "progressbar",
