@@ -14,6 +14,7 @@ exports[`imports > should export imports rules config 1`] = `
   ],
   "plugins": [
     "import",
+    "node-import",
   ],
   "rules": {
     "import/consistent-type-specifier-style": "off",
@@ -103,6 +104,7 @@ exports[`imports > should export imports rules config 1`] = `
     ],
     "import/prefer-default-export": "off",
     "import/unambiguous": "off",
+    "node-import/prefer-node-protocol": "error",
   },
   "settings": {
     "import/extensions": [

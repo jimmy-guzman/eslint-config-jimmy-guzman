@@ -1,10 +1,10 @@
-import { rules } from './rules/imports'
+import rules from './rules/imports'
 
 /**
  * https://github.com/import-js/eslint-plugin-import/tree/v2.25.2#rules
  */
 export = {
-  plugins: ['import'],
+  plugins: ['import', 'node-import'],
   rules,
   overrides: [
     {
