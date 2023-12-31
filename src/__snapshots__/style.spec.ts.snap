@@ -128,15 +128,7 @@ exports[`style > should export style rules config 1`] = `
     "prefer-object-spread": "error",
     "prefer-spread": "error",
     "sort-imports": "off",
-    "sort-keys": [
-      "error",
-      "asc",
-      {
-        "caseSensitive": true,
-        "minKeys": 5,
-        "natural": false,
-      },
-    ],
+    "sort-keys": "off",
     "sort-vars": "off",
     "space-before-blocks": "off",
     "spaced-comment": "off",

@@ -54,7 +54,7 @@ exports[`typescript > should export typescript rules config 1`] = `
         "@typescript-eslint/dot-notation": "error",
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/explicit-member-accessibility": "off",
-        "@typescript-eslint/explicit-module-boundary-types": "error",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
         "@typescript-eslint/init-declarations": "off",
         "@typescript-eslint/key-spacing": "off",
         "@typescript-eslint/lines-around-comment": "off",
@@ -65,123 +65,12 @@ exports[`typescript > should export typescript rules config 1`] = `
             "max": 3,
           },
         ],
-        "@typescript-eslint/member-ordering": [
-          "error",
-          {
-            "default": {
-              "memberTypes": [
-                "signature",
-                "method",
-                "constructor",
-                "field",
-              ],
-              "order": "alphabetically",
-            },
-          },
-        ],
+        "@typescript-eslint/member-ordering": "off",
         "@typescript-eslint/method-signature-style": [
           "error",
           "property",
         ],
-        "@typescript-eslint/naming-convention": [
-          "error",
-          {
-            "format": [
-              "camelCase",
-            ],
-            "selector": "default",
-          },
-          {
-            "format": [
-              "camelCase",
-              "PascalCase",
-              "UPPER_CASE",
-            ],
-            "selector": "variable",
-          },
-          {
-            "format": [
-              "PascalCase",
-            ],
-            "prefix": [
-              "is",
-              "should",
-              "has",
-              "can",
-              "did",
-              "will",
-            ],
-            "selector": "variable",
-            "types": [
-              "boolean",
-            ],
-          },
-          {
-            "format": [
-              "camelCase",
-              "PascalCase",
-            ],
-            "selector": "function",
-          },
-          {
-            "format": [
-              "camelCase",
-            ],
-            "leadingUnderscore": "allow",
-            "selector": "parameter",
-          },
-          {
-            "format": [
-              "PascalCase",
-            ],
-            "selector": "typeLike",
-          },
-          {
-            "format": [
-              "PascalCase",
-              "UPPER_CASE",
-            ],
-            "selector": "enum",
-          },
-          {
-            "format": [
-              "PascalCase",
-              "UPPER_CASE",
-            ],
-            "selector": "enumMember",
-          },
-          {
-            "custom": {
-              "match": false,
-              "regex": "^I[A-Z]",
-            },
-            "format": [
-              "PascalCase",
-            ],
-            "selector": "interface",
-          },
-          {
-            "format": [
-              "camelCase",
-            ],
-            "leadingUnderscore": "require",
-            "modifiers": [
-              "private",
-            ],
-            "selector": "memberLike",
-          },
-          {
-            "format": null,
-            "selector": "property",
-          },
-          {
-            "format": [
-              "camelCase",
-              "PascalCase",
-            ],
-            "selector": "method",
-          },
-        ],
+        "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-base-to-string": "warn",
         "@typescript-eslint/no-confusing-non-null-assertion": "off",
