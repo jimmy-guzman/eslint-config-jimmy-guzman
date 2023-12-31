@@ -59,6 +59,7 @@
     "textnodes",
     "transpiles",
     "treegrid",
+    "typecheck",
     "typeof",
     "vitest",
     "wagoid"
