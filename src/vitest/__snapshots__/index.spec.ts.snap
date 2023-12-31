@@ -31,6 +31,7 @@ exports[`vitest > should export vitest rules config 1`] = `
         "jest/no-commented-out-tests": "error",
         "jest/no-conditional-expect": "error",
         "jest/no-conditional-in-test": "error",
+        "jest/no-confusing-set-timeout": "error",
         "jest/no-deprecated-functions": "off",
         "jest/no-disabled-tests": "warn",
         "jest/no-done-callback": "error",
