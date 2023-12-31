@@ -39,6 +39,7 @@ exports[`errors > should export errors rules config 1`] = `
     "no-loss-of-precision": "error",
     "no-misleading-character-class": "error",
     "no-mixed-spaces-and-tabs": "error",
+    "no-new-native-nonconstructor": "error",
     "no-new-symbol": "error",
     "no-nonoctal-decimal-escape": "error",
     "no-obj-calls": "error",
