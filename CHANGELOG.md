@@ -1,3 +1,22 @@
+# [12.2.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v12.1.0...v12.2.0) (2024-01-01)
+
+
+### Bug Fixes
+
+* 🐛 use correct peer dependencies range for typescript ([dbcd6e3](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/dbcd6e3c23e4506aaaa5283c2ecd913e27c5300b))
+* **ts:** 🐛 disable `dot-notation` ([470dcbc](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/470dcbc617612d4e6c51a90737b466d0a6a68668)), closes [#216](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/216)
+* **ts:** 🐛 disable `no-use-before-define` ([8ed608f](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/8ed608f98d89bc86986d9f9c164d28ce2b674033)), closes [#180](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/issues/180)
+
+
+### Features
+
+* ✨ add ingore patterns for easier setup ([64537b6](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/64537b62308269b23d62e260302ccbc8c588d584))
+* ✨ enable `func-style` to prefer expressions ([2fedf77](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/2fedf77d38ec1f626939b98f350e488eb27da130))
+* ✨ ignore typechecking rules for config js files ([ca0bd17](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/ca0bd1773c9754dfd3efb1175505a7525780d7c4))
+* ✨ relax a few stylistic rules ([3f980dd](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/3f980ddc2dc0115c7067eabb58725640ff790f8b))
+* **imports:** ✨ add autofixable for import/exports rules ([8c9cc30](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/8c9cc30a87541982c4d31b8ded706fc6b2de364b))
+* **imports:** ✨ add prefer node protocol rule ([3981060](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/3981060dbdda7db94e2afc9170045b67b27ac40d))
+
 # [12.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v12.0.0...v12.1.0) (2023-12-31)
 
 
