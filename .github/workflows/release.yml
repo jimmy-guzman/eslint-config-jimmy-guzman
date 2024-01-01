@@ -37,8 +37,8 @@ jobs:
       - name: find new rules
         run: pnpm find-new-rules
 
-      - name: test
-        run: pnpm test:coverage
+      - name: coverage
+        run: pnpm coverage
 
       - name: codecov
         uses: codecov/codecov-action@v3
