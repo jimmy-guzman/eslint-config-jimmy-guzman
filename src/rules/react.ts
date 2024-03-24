@@ -35,7 +35,7 @@ export const rules: EslintRules = {
   'react/hook-use-state': 'off', // revisit
   'react/iframe-missing-sandbox': 'off', // revisit
   'react/jsx-boolean-value': ['error', 'never'],
-  'react/jsx-curly-brace-presence': 'off',
+  'react/jsx-curly-brace-presence': ['error', 'never'],
   'react/jsx-filename-extension': 'off',
   'react/jsx-fragments': ['error', 'syntax'],
   'react/jsx-handler-names': 'off',
