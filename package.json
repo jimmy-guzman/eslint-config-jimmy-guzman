@@ -85,7 +85,7 @@
     "@semantic-release/release-notes-generator": "12.1.0",
     "@types/node": "20.11.0",
     "@vitest/coverage-v8": "1.2.0",
-    "commitlint": "18.4.4",
+    "commitlint": "18.6.1",
     "eslint": "8.56.0",
     "eslint-find-rules": "4.1.0",
     "gitzy": "4.0.0",
