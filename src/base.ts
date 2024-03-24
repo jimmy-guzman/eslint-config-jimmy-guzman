@@ -33,5 +33,8 @@ export = {
     'coverage/',
     'vite.config.ts.*.mjs',
     'storybook-static/',
+    '**/*.gen.*',
+    '!.storybook/',
+    '!.prettierrc.*',
   ],
 }
