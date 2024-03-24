@@ -7,7 +7,7 @@ const hooksRules = <const>{
   'react-hooks/rules-of-hooks': 'error',
 }
 
-export const rules: EslintRules = {
+export const rules = {
   ...eslintOverrides,
   ...jsxA11yRules,
   ...hooksRules,
@@ -15,7 +15,8 @@ export const rules: EslintRules = {
     'error',
     { rule: '^(is|has|should|can|did|will)[A-Z]([A-Za-z0-9]?)+' },
   ],
-  'react/button-has-type': 'off', // revisit
+  'react/button-has-type': 'off', // revisit,
+  'react/checked-requires-onchange-or-readonly': 'error',
   'react/default-props-match-prop-types': 'error',
   'react/destructuring-assignment': 'off',
   'react/display-name': 'warn',
@@ -106,4 +107,4 @@ export const rules: EslintRules = {
   'react/static-property-placement': 'off',
   'react/style-prop-object': 'error',
   'react/void-dom-elements-no-children': 'error',
-}
+} satisfies EslintRules
