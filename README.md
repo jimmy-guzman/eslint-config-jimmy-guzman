@@ -20,7 +20,7 @@ pnpm add -D eslint-config-jimmy-guzman
 
 ## Configuration
 
-Add `extends: []'jimmy-guzman']` to your `.eslintrc` to get all the rules that enforce code style, enforce best practices and prevent errors.
+Add `extends: ['jimmy-guzman']` to your `.eslintrc` to get all the rules that enforce code style, enforce best practices and prevent errors.
 
 This package also includes rules for `jest`, `vitest`, `react`, `typescript` and `testing-library` that can be used such as:
 
