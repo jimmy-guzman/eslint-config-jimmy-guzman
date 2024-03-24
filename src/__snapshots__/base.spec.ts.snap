@@ -14,6 +14,9 @@ exports[`base > should export base rules config 1`] = `
     "coverage/",
     "vite.config.ts.*.mjs",
     "storybook-static/",
+    "**/*.gen.*",
+    "!.storybook/",
+    "!.prettierrc.*",
   ],
   "overrides": [
     {
