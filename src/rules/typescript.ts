@@ -4,7 +4,7 @@ import { eslintOverrides, importDuplicates } from './typescript-overrides'
 /**
  * https://typescript-eslint.io/rules
  */
-export const rules: EslintRules = {
+export const rules = {
   ...importDuplicates,
   ...eslintOverrides,
   '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -148,4 +148,19 @@ export const rules: EslintRules = {
   '@typescript-eslint/typedef': 'off', // revisit
   '@typescript-eslint/unbound-method': 'error',
   '@typescript-eslint/unified-signatures': 'warn',
-}
+
+  'consistent-return': 'off',
+  '@typescript-eslint/consistent-return': 'error',
+
+  '@typescript-eslint/no-array-delete': 'error',
+
+  '@typescript-eslint/prefer-find': 'error',
+
+  'prefer-promise-reject-errors': 'off',
+  '@typescript-eslint/prefer-promise-reject-errors': [
+    'error',
+    { allowEmptyReject: true },
+  ],
+
+  '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
+} satisfies EslintRules
