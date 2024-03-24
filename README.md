@@ -18,7 +18,7 @@
 
 # Usage
 
-> The current version of `eslint-config-jimmy-guzman` is fully supported on [LTS and current versions of node][node-lts-versions], and requires at least node v16.
+> The current version of `eslint-config-jimmy-guzman` is fully supported on [LTS and current versions of node][node-lts-versions], and requires at least node v20.
 
 ## Installation:
 
