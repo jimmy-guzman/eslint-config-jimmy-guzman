@@ -1,3 +1,5 @@
+# eslint-config-jimmy-guzman
+
 ![actions][actions-badge]
 [![version][version-badge]][package] [![downloads][downloads-badge]][npmtrends]
 [![License][license-badge]][license]
@@ -5,42 +7,27 @@
 [![code style: prettier][prettier-badge]][prettier]
 [![Code Coverage][coverage-badge]][coverage]
 
-# eslint-config-jimmy-guzman
-
 > An opinionated ESLint configuration that targets typescript, javascript, react, jest vitest and testing-library
-
-# Table of Contents
-
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Why](#why)
-- [Contributing](./CONTRIBUTING.md)
 
 # Usage
 
 > The current version of `eslint-config-jimmy-guzman` is fully supported on [LTS and current versions of node][node-lts-versions], and requires at least node v20.
 
-## Installation:
+## Installation
 
-**This requires the peer dependencies:** `eslint@^8.24.0`, `typescript@^4.5.0`, and `prettier@^2.4.0`.
-
-_To easily install everything you can leverage [`install-peerdeps`][install-peerdeps], i.e_
-
-| for             | how                                                                 |
-| --------------- | ------------------------------------------------------------------- |
-| yarn/npm        | `npx install-peerdeps --dev eslint-config-jimmy-guzman`             |
-| yarn workspaces | `npx install-peerdeps eslint-config-jimmy-guzman --dev -yarn -x -W` |
-| pnpm            | `pnpm dlx install-peerdeps eslint-config-jimmy-guzman --dev --pnpm` |
+```
+pnpm add -D eslint-config-jimmy-guzman
+```
 
 ## Configuration
 
-Add `extends: 'jimmy-guzman'` to your `.eslintrc` to get all the rules that enforce code style, enforce best practices and prevent errors.
+Add `extends: []'jimmy-guzman']` to your `.eslintrc` to get all the rules that enforce code style, enforce best practices and prevent errors.
 
 This package also includes rules for `jest`, `vitest`, `react`, `typescript` and `testing-library` that can be used such as:
 
 | rules           | configuration                                                                     | notes                    |
 | --------------- | --------------------------------------------------------------------------------- | ------------------------ |
-| base            | `extends: 'jimmy-guzman'`                                                         |                          |
+| base            | `extends: ['jimmy-guzman']`                                                       |                          |
 | jest            | `extends: ['jimmy-guzman', 'jimmy-guzman/jest']`                                  |                          |
 | vitest          | `extends: ['jimmy-guzman', 'jimmy-guzman/vitest']`                                |                          |
 | typescript      | `extends: ['jimmy-guzman', 'jimmy-guzman/typescript']`                            | [here](#typescript)      |
@@ -51,20 +38,29 @@ This package also includes rules for `jest`, `vitest`, `react`, `typescript` and
 
 The following rules don't support some monorepo setups so you might need to turned them off:
 
-```yml
-# .eslintrc.yml
-rules:
-  import/no-extraneous-dependencies: off
+```js filename=".eslintrc.cjs"
+/** @type {import('eslint').Linter.Config} */
+module.exports = {
+  extends: ['jimmy-guzman'],
+  rules: {
+    'import/no-extraneous-dependencies': 'off',
+    'react/jsx-uses-react': 'error',
+  },
+}
 ```
 
 ### Typescript
 
 `jimmy-guzman/typescript` ruleset requires type information that needs further configuration:
 
-```yml
-# .eslintrc.yml
-parserOptions:
-  project: ['./tsconfig.json']
+```js filename=".eslintrc.cjs"
+/** @type {import('eslint').Linter.Config} */
+module.exports = {
+  extends: ['jimmy-guzman', 'jimmy-guzman/typescript'],
+  parserOptions: {
+    project: ['./tsconfig.json'],
+  },
+}
 ```
 
 You can read more about linting with type information [here][typed-linting]
@@ -73,27 +69,30 @@ You can read more about linting with type information [here][typed-linting]
 
 `jimmy-guzman/react` favors [React 17's new jsx transform][react-17-new-jsx-transform] so a couple of rules are turned off by default. If you are not using the new jsx transform, it's recommended to add this configuration:
 
-```yml
-parserOptions:
-  ecmaFeatures:
-    jsx: true
-    pragma: React
-rules:
-  react/react-in-jsx-scope: error
-  react/jsx-uses-react: error
+```js filename=".eslintrc.cjs"
+/** @type {import('eslint').Linter.Config} */
+module.exports = {
+  extends: ['jimmy-guzman', 'jimmy-guzman/react'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+      pragma: 'React',
+    },
+  },
+  rules: {
+    'react/react-in-jsx-scope': 'error',
+    'react/jsx-uses-react': 'error',
+  },
+}
 ```
 
 ### Testing Library
 
 `jimmy-guzman/testing-library` makes an assumption that a suite of Testing Library packages are being used such as [@testing-library/react](https://github.com/testing-library/react-testing-library#readme), [@testing-library/jest-dom](https://github.com/testing-library/jest-dom#readme) and [@testing-library/user-event](https://github.com/testing-library/user-event#readme).
 
-## Why
-
-I wanted a one-stop shop for the ESLint rules across my projects to help keep up with ESLint upgrades across different plugins and to have consistency. Feel free to use this if it fits your needs. ❤️
-
 <!-- badges -->
 
-[actions-badge]: https://img.shields.io/github/workflow/status/jimmy-guzman/eslint-config-jimmy-guzman/release?label=actions&logo=github-actions&style=flat-square
+[actions-badge]: https://img.shields.io/github/actions/workflow/status/jimmy-guzman/eslint-config-jimmy-guzman/release.yml?style=flat-square&logo=github-actions
 [version-badge]: https://img.shields.io/npm/v/eslint-config-jimmy-guzman.svg?logo=npm&style=flat-square
 [package]: https://www.npmjs.com/package/eslint-config-jimmy-guzman
 [downloads-badge]: https://img.shields.io/npm/dm/eslint-config-jimmy-guzman.svg?logo=npm&style=flat-square
@@ -109,7 +108,6 @@ I wanted a one-stop shop for the ESLint rules across my projects to help keep up
 
 <!-- misc -->
 
-[install-peerdeps]: https://www.npmjs.com/package/install-peerdeps
-[typed-linting]: https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/TYPED_LINTING.md
+[typed-linting]: https://github.com/typescript-eslint/typescript-eslint/blob/main/docs/getting-started/Typed_Linting.mdx
 [node-lts-versions]: https://nodejs.org/en/about/releases/#releases
 [react-17-new-jsx-transform]: https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html
