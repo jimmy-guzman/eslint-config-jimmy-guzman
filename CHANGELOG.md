@@ -1,3 +1,26 @@
+# [14.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v13.0.0...v14.0.0) (2024-03-24)
+
+
+### Bug Fixes
+
+* 🐛 allow `.storybook/` & `.prettierrc.*` to be linted ([ebfecbb](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/ebfecbb578457fb58bc1f50743418a73c72a39e7))
+
+
+### Features
+
+* ✨ start getting ready for `eslint` v9 ([996d53f](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/996d53f0b0f14a6606a06732e50566152e323693))
+* **react:** ✨ enable `checked-requires-onchange-or-readonly` rule ([81429cc](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/81429ccb6e52cf97bb2b6d2346ba4d00a04628bb))
+* **react:** ✨ make jsx curly presense consistent ([0b0d0e6](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/0b0d0e6fadc9a4cb7b00a36d5c643b66c5d44dd6))
+* **ts:** ✨ `typescript` v5.4 is now supported ([aad32c4](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/aad32c47653ea6a9b7d9249b537194fd187b26a9))
+
+
+### BREAKING CHANGES
+
+* **ts:** 💥 `eslint` of at least v8.56.0 is required and
+`typescript` of at least v4.7.4 is required.
+* **react:** 💥 `checked-requires-onchange-or-readonly` requires code
+changes
+
 # [13.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v12.2.0...v13.0.0) (2024-03-24)
 
 
