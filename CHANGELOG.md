@@ -1,3 +1,15 @@
+# [13.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v12.2.0...v13.0.0) (2024-03-24)
+
+
+### Features
+
+* ✨ drop support for `node` v16 and v18 ([42a46a7](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/42a46a7e6f62aac002f34e95ff6481647de9cb4b))
+
+
+### BREAKING CHANGES
+
+* 💥 `node` versions 16 and 18 are no longer supported
+
 # [12.2.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v12.1.0...v12.2.0) (2024-01-01)
 
 
