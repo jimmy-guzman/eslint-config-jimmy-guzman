@@ -1,3 +1,10 @@
+# [14.1.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v14.0.0...v14.1.0) (2024-03-30)
+
+
+### Features
+
+* **ts:** ✨ swap to `only-throw-error` from `no-throw-literal` ([1298968](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/commit/12989689647c88650c84b672baf09531a4743885))
+
 # [14.0.0](https://github.com/jimmy-guzman/eslint-config-jimmy-guzman/compare/v13.0.0...v14.0.0) (2024-03-24)
 
 
