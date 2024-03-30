@@ -85,13 +85,7 @@ export const rules = {
   '@typescript-eslint/no-restricted-imports': 'off',
   '@typescript-eslint/no-shadow': 'error',
   '@typescript-eslint/no-this-alias': 'error',
-  '@typescript-eslint/no-throw-literal': [
-    'error',
-    {
-      allowThrowingAny: true,
-      allowThrowingUnknown: true,
-    },
-  ],
+  '@typescript-eslint/no-throw-literal': 'off',
   '@typescript-eslint/no-type-alias': 'off',
   '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error', // fixable
   '@typescript-eslint/no-unnecessary-condition': 'error', // fixable
@@ -163,4 +157,7 @@ export const rules = {
   ],
 
   '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
+
+  'no-throw-literal': 'off',
+  '@typescript-eslint/only-throw-error': 'error',
 } satisfies EslintRules
