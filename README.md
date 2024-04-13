@@ -1,3 +1,5 @@
+**This is now deprecated in favor of [@jimmy.codes/eslint-config](https://github.com/jimmy-guzman/eslint-config)**
+
 # eslint-config-jimmy-guzman
 
 ![actions][actions-badge]
