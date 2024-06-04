@@ -83,8 +83,8 @@ devDependencies:
     specifier: 4.1.0
     version: 4.1.0(eslint@8.57.0)
   gitzy:
-    specifier: 5.2.0
-    version: 5.2.0
+    specifier: 5.4.0
+    version: 5.4.0
   husky:
     specifier: 9.0.11
     version: 9.0.11
@@ -3145,14 +3145,14 @@ packages:
       split2: 4.2.0
     dev: true
 
-  /gitzy@5.2.0:
-    resolution: {integrity: sha512-Wd9ktB/Uh+Uc+gMHmrL2seKA9e2CnetD2eg/B/meYkeZbpn1qElzbRn/oEcTlxaD5/aK4pVe0OvQ3926M8t2xQ==}
+  /gitzy@5.4.0:
+    resolution: {integrity: sha512-lii2a031AzJ5iT1+gl2fb4MHmK/65xuX5Nr2ZNRwaK4TFvHMd6GMZk7BuMcxc3+DSFWC7AxWGXLkWFSq9NP3bg==}
     engines: {node: '>= 18'}
     hasBin: true
     dependencies:
       commander: 11.1.0
       enquirer: 2.3.6
-      lilconfig: 2.1.0
+      lilconfig: 3.1.1
       yaml: 2.3.4
     dev: true
 
@@ -3901,13 +3901,13 @@ packages:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  /lilconfig@2.1.0:
-    resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
-    engines: {node: '>=10'}
-    dev: true
-
   /lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
+    engines: {node: '>=14'}
+    dev: true
+
+  /lilconfig@3.1.1:
+    resolution: {integrity: sha512-O18pf7nyvHTckunPWCV1XUNXU1piu01y2b7ATJ0ppkUkk8ocqVWBrYjJBCwHDjD/ZWcfyrA0P4gKhzWGi5EINQ==}
     engines: {node: '>=14'}
     dev: true
 
